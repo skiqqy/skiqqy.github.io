@@ -16,20 +16,23 @@ install:
 	mkdir -p blogs
 
 clean:
+	rm -rf blogs/*.html
+	rm -rf ./blogs.html
 	rm -rf obj
 	rm -rf bin
 
 blog: all
 	@# Reset all blogs to start build.
-	-rm -rf  blogs/*.html
 	@# Setup boilerplate html files for blog files
 	-@for blog in ./blogs/RawBlogs/*.blog ; do \
 		blog=$$(echo $$blog | cut -c 17- | cut -d "." -f 1); \
 		cp ./blogs/preamble/start.html ./blogs/$$blog.html; \
 		done
+	-@cp ./blogs/preamble/start.html ./blogs.html
 	./bin/GenBlog
 	@# Append the end of the file once done
 	-@for blog in ./blogs/RawBlogs/*.blog ; do \
 		blog=$$(echo $$blog | cut -c 17- | cut -d "." -f 1); \
 		cat ./blogs/preamble/end.html >> ./blogs/$$blog.html; \
 		done
+	-@cat ./blogs/preamble/end.html >> ./blogs.html

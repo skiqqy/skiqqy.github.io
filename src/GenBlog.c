@@ -19,6 +19,7 @@ int main() {
 	struct dirent *ent;
 	char buff[256];
 	char htmlName[256];
+	char link[256];
 	char cat[2];
 	char *c;
 	int i;
@@ -27,6 +28,7 @@ int main() {
 		while ((ent = readdir(dir)) != NULL) {
 			if (strcmp(ent->d_name, ".") && strcmp(ent->d_name, "..")) {
 				sprintf(htmlName, "./blogs/");
+				sprintf(link, "");
 
 				c = ent->d_name;
 				i = 0;
@@ -34,15 +36,25 @@ int main() {
 					cat[0] = c[i];
 					cat[1] = '\0';
 					strcat(htmlName, cat);
+					strcat(link, cat);
 					i++;
 				}
 				strcat(htmlName, ".html");
+
 				printf("%s\n", htmlName);
 				sprintf(buff, "./blogs/RawBlogs/");
 				strcat(buff, ent->d_name);
-				printf("opening, %s, %s|\n", buff, htmlName);
+				printf("opening, %s, %s, %s\n", buff, htmlName, link);
 				chtml = fopen(htmlName, "a+");
 				genBP(buff);
+				// Add links now
+				chtml = fopen("./blogs.html", "a+");
+				append_html("<center><a href=");
+				append_html(htmlName);
+				append_html(">");
+				append_html(link);
+				append_html("</a></center>\n");
+				fclose(chtml);
 			}
 		}
 	}
