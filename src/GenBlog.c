@@ -148,7 +148,34 @@ void parseBox() {
 }
 
 void parseNoBox() {
+	char cat[2];
+	int i = 0;
+	char *nl = "\n";
+	int flag = 0;
 
+	append_html("   ");
+	while (ch != ']' && ch != EOF) {
+		cat[0] = ch;
+		cat[1] = '\0';
+
+		if (i > 61) {
+			if (ch != ',' && ch != ' ') {
+				i = 0;
+				if (!flag) {
+					append_html("-");
+					flag = 0;
+				}
+				append_html(nl);
+			} else {
+				flag = 1;
+			}
+		}
+
+		append_html(cat);
+		next();
+		i++;
+	}
+	append_html("\n");
 }
 
 void append_html(char *str) {
