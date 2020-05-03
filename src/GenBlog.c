@@ -169,6 +169,9 @@ void parseNoBox() {
 	while (ch != ']' && ch != EOF) {
 		cat[0] = ch;
 		cat[1] = '\0';
+		if (ch == '\n') {
+			i = 0;
+		}
 
 		if (i > 61) {
 			if (ch != ',' && ch != ' ') {

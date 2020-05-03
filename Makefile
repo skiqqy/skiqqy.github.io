@@ -21,7 +21,7 @@ clean:
 	rm -rf obj
 	rm -rf bin
 
-blog: all
+blog: clean all
 	@# Reset all blogs to start build.
 	@# Setup boilerplate html files for blog files
 	-@for blog in ./blogs/RawBlogs/*.blog ; do \
