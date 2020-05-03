@@ -79,12 +79,15 @@ void genBP(char *file) {
 
 void echoFile(FILE *fp) {
 	char line[256] = "";
+	char cat[2];
 	ch = getc(fp);
 
 	printf("Echo file\n");
 	while (ch != EOF) {
 		if (ch != '\n') {
-			strcat(line, &ch);
+			cat[0] = ch;
+			cat[1] = '\0';
+			strcat(line, cat);
 		} else {
 			printf("%s\n", line);
 			sprintf(line, "");
@@ -104,6 +107,7 @@ void parseBox() {
 	char *tb =    "+-------------------------------------------------------+\n";
 	char *empty = "|                                                       |\n";
 	char line[256];
+	char cat[2];
 	
 	append_html(tb);
 	append_html(empty);
@@ -119,7 +123,9 @@ void parseBox() {
 			append_html("|   ");
 		} else if ( i < 47) {
 			//print char
-			append_html(&ch);
+			cat[0] = ch;
+			cat[1] = '\0';
+			append_html(cat);
 			next();
 		} else {
 			//setup newline
