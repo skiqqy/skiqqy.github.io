@@ -35,7 +35,7 @@ cd $HOME/repos
 git clone https://github.com/skippy404/.dotfiles/
 git clone https://github.com/skippy404/.tmux
 mkdir $HOME/Builds
-cd Builds
+cd $HOME/Builds
 
 # Begin Builing
 git clone https://github.com/skippy404/dwm
