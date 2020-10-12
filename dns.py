@@ -2,7 +2,7 @@
 # @Author skiqqy
 import requests
 import os
-import json
+import time
 
 f = open("secret/godaddy_key", "r")
 
@@ -39,7 +39,17 @@ domains = {
         }
 
 # Get current public ip
-ip = os.popen('curl ifconfig.me').read()
+# Max 60s then give up (1s per try + 1s sleep = 2s per iter => 30*2 =60
+for i in range(30):
+    ip = os.popen('curl ifconfig.me --max-time 1').read()
+    if ip == "":
+        # We timed out
+        time.sleep(1)
+    else:
+        break
+
+if ip == "":
+    exit(1) # We could not get our ip
 
 # Construct the post data
 for domain in domains:
