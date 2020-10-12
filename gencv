@@ -1,1 +1,1 @@
-man -t <(curl skiqqy.xyz/skippy.1) | ps2pdf - - > CurriculumVitae.pdf
+man -t <(curl skiqqy.xyz/skiqqy.1) | ps2pdf - - > CurriculumVitae.pdf
