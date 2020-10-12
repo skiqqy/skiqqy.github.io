@@ -1,1 +1,1 @@
-man -t <(curl yggpi.co.za/skippy.1) | ps2pdf - - > CurriculumVitae.pdf
+man -t <(curl skiqqy.xyz/skippy.1) | ps2pdf - - > CurriculumVitae.pdf
