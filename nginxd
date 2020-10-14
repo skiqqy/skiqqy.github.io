@@ -7,6 +7,7 @@ help_menu () {
 	echo "Welcome!"
 	echo -e "e\t->\tEnable a unit."
 	echo -e "d\t->\tDisable a unit."
+	echo -e "u\t->\tSpecify the path to the units directory"
 	echo -e "h\t->\tShows this message."
 }
 
@@ -23,7 +24,7 @@ link () {
 	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
 }
 
-while getopts "he:d:" opt
+while getopts "he:d:u:" opt
 do
 	case $opt in
 		h)
@@ -34,6 +35,9 @@ do
 			[[ $opt == "e" ]] && oper=e || oper=d
 			unit="$OPTARG"
 			;;
+		u)
+			[ -d "$OPTARG" ] && unitsd="$OPTARG" || error "Not <$OPTARG> a valid directory" 1
+			;;
 		*)
 			exit 2
 			;;
@@ -42,6 +46,7 @@ done
 
 # Available units
 units=( git blog wiki irc proj all )
+unitsd=${unitsd-"./units"}
 
 # Check that a valid unit was given.
 [[ ! " ${units[@]} " =~ " ${unit} " ]] && error "The unit <$unit> does not exist." 1 \
