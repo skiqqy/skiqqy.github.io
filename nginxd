@@ -1,5 +1,6 @@
 #!/bin/bash
 # @Auther skiqqy
+# This script is best run as root inside the root of this repo.
 # This script allows me to enable/disable certain sections of my website.
 
 help_menu () {
@@ -10,8 +11,16 @@ help_menu () {
 }
 
 error () {
+	# error [message] [exit code]
 	echo "[ERROR] $1"
 	exit $2
+}
+
+link () {
+	# links available site to enabled.
+	# link [unit]
+	[ ! -f /etc/nginx/sites-available/$1 ] && error "The unit <$1> file cannot be linked" 1
+	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
 }
 
 while getopts "he:d:" opt
@@ -21,7 +30,7 @@ do
 			help_menu
 			;;
 		e | d)
-			[ ! -z $unit ] && error "Unit <$unit> already set" 1
+			[ ! -z $unit ] && error "Unit <$unit> already set." 1
 			[[ $opt == "e" ]] && oper=e || oper=d
 			unit="$OPTARG"
 			;;
@@ -31,4 +40,9 @@ do
 	esac
 done
 
-echo $unit, $oper
+# Available units
+units=( git blog wiki irc proj all )
+
+# Check that a valid unit was given.
+[[ ! " ${units[@]} " =~ " ${unit} " ]] && error "The unit <$unit> does not exist." 1 \
+	|| echo "Unit <$unit> found!"
