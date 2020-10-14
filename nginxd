@@ -51,8 +51,12 @@ done
 
 # Available units
 units=( git blog wiki irc proj all )
-unitsd=${unitsd-"./units"}
+unitsd=${unitsd:="./units"}
 
 # Check that a valid unit was given.
 [[ ! " ${units[@]} " =~ " ${unit} " ]] && error "The unit <$unit> does not exist." 1 \
 	|| echo "Unit <$unit> found!"
+
+# Everything is valid, start setting up.
+cp $unitsd/* /etc/nginx/sites-available/
+# TODO: Setup links, and delete links if needed
