@@ -24,11 +24,13 @@ link () {
 	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
 }
 
+# Handle arguments and do basic error checking
 while getopts "he:d:u:" opt
 do
 	case $opt in
 		h)
 			help_menu
+			exit 0
 			;;
 		e | d)
 			[ ! -z $unit ] && error "Unit <$unit> already set." 1
@@ -43,6 +45,9 @@ do
 			;;
 	esac
 done
+
+# if not specified, then by default we enable everything
+[ -z $unit ] && unit="all" && oper="e"
 
 # Available units
 units=( git blog wiki irc proj all )
