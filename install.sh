@@ -32,14 +32,14 @@ done
 # Clone repos
 mkdir $HOME/repos
 cd $HOME/repos
-git clone https://github.com/skippy404/.dotfiles/
-git clone https://github.com/skippy404/.tmux
+git clone https://github.com/skiqqy/.dotfiles/
+git clone https://github.com/skiqqy/.tmux
 mkdir $HOME/Builds
 cd $HOME/Builds
 
 # Begin Builing
-git clone https://github.com/skippy404/dwm
-git clone https://github.com/skippy404/st
+git clone https://github.com/skiqqy/dwm
+git clone https://github.com/skiqqy/st
 make -C dwm/
 sudo make -C st/
 
