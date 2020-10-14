@@ -1,0 +1,34 @@
+#!/bin/bash
+# @Auther skiqqy
+# This script allows me to enable/disable certain sections of my website.
+
+help_menu () {
+	echo "Welcome!"
+	echo -e "e\t->\tEnable a unit."
+	echo -e "d\t->\tDisable a unit."
+	echo -e "h\t->\tShows this message."
+}
+
+error () {
+	echo "[ERROR] $1"
+	exit $2
+}
+
+while getopts "he:d:" opt
+do
+	case $opt in
+		h)
+			help_menu
+			;;
+		e | d)
+			[ ! -z $unit ] && error "Unit <$unit> already set" 1
+			[[ $opt == "e" ]] && oper=e || oper=d
+			unit="$OPTARG"
+			;;
+		*)
+			exit 2
+			;;
+	esac
+done
+
+echo $unit, $oper
