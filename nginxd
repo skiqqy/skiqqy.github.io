@@ -52,6 +52,7 @@ done
 # Available units
 units=( git blog wiki irc proj all )
 unitsd=${unitsd:="./units"}
+unitsd=$(echo $unitsd | sed 's:/*$::') # Remove trailing slash
 
 # Check that a valid unit was given.
 [[ ! " ${units[@]} " =~ " ${unit} " ]] && error "The unit <$unit> does not exist." 1 \
