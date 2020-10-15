@@ -51,30 +51,33 @@ all () {
 
 	REMOVE=()
 	ADD=()
-	if [ $1 == 'e' ]
-	then
-		for u in "${units[@]}"
-		do
-			if [ $u != "all" ]
+	for u in "${units[@]}"
+	do
+		if [ $u != "all" ]
+		then
+			if [ $1 == 'e' ]
 			then
 				ADD+=("$u")
 				REMOVE+=("d$u")
-			fi
-		done
-	else
-		for u in "${units[@]}"
-		do
-			if [ $u != "all" ]
-			then
+			else
 				REMOVE+=("$u")
 				ADD+=("d$u")
 			fi
-		done
-	fi
+		fi
+	done
 
 	echo "Adding units ( ${ADD[@]} )"
 	echo "Removing units ( ${REMOVE[@]} )"
-	echo TODO: Add and remove units using add,remove
+
+	for u in "${ADD[@]}"
+	do
+		add $u
+	done
+
+	for u in "${REMOVE[@]}"
+	do
+		remove $u
+	done
 }
 
 # Handle arguments and do basic error checking
