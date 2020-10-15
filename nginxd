@@ -5,6 +5,8 @@
 
 # Available units
 units=( git blog wiki irc proj all )
+RED='\033[0;31m'
+NC='\033[0m'
 
 # Sow the help menu
 help_menu () {
@@ -18,7 +20,7 @@ help_menu () {
 # Display an error message and exit.
 # error [message] [exit code]
 error () {
-	echo "[ERROR] $1"
+	printf "[${RED}ERROR${NC}] $1\n"
 	exit $2
 }
 
