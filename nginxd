@@ -55,8 +55,12 @@ unitsd=${unitsd:="./units"}
 
 # Check that a valid unit was given.
 [[ ! " ${units[@]} " =~ " ${unit} " ]] && error "The unit <$unit> does not exist." 1 \
-	|| echo "Unit <$unit> found!"
+	|| echo "Unit <$unit> is supported!"
+
+# Check if we are disabeling, that we have a replacement unit
+[ $oper == "d" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>" 1
+[ $oper == "e" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
 
 # Everything is valid, start setting up.
-cp $unitsd/* /etc/nginx/sites-available/
-# TODO: Setup links, and delete links if needed
+#cp $unitsd/* /etc/nginx/sites-available/
+echo TODO: Setup links, and delete links if needed
