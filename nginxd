@@ -43,7 +43,7 @@ add () {
 # remove [unit]
 remove () {
 	echo TODO: Remove $1
-	rm /etc/nginx/sites-enabled/$1
+	rm -f /etc/nginx/sites-enabled/$1
 }
 
 # Enable or disable all units.
