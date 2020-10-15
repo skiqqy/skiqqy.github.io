@@ -3,6 +3,9 @@
 # This script is best run as root inside the root of this repo.
 # This script allows me to enable/disable certain sections of my website.
 
+# Available units
+units=( git blog wiki irc proj all )
+
 help_menu () {
 	echo "Welcome!"
 	echo -e "e\t->\tEnable a unit."
@@ -20,8 +23,25 @@ error () {
 link () {
 	# links available site to enabled.
 	# link [unit]
-	[ ! -f /etc/nginx/sites-available/$1 ] && error "The unit <$1> file cannot be linked" 1
+	[ ! -f /etc/nginx/sites-available/$1 ] && error "The unit <$1> file cannot be linked." 1
 	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
+}
+
+all () {
+	# $1 -> Enable or disable
+
+	# Test and check valid args
+	[ -z $1 ] && error "[ALL] Not given a flag."
+	! [[ $1 == 'e' || $1 == 'd' ]] && error "[ALL] Not given a valid flag."
+
+	REMOVE=()
+	ADD=()
+	if [ $1 == 'e' ]
+	then
+		echo TODO: Append units to add, and disables to remove
+	else
+		echo TODO: Inverse of above
+	fi
 }
 
 # Handle arguments and do basic error checking
@@ -38,7 +58,7 @@ do
 			unit="$OPTARG"
 			;;
 		u)
-			[ -d "$OPTARG" ] && unitsd="$OPTARG" || error "Not <$OPTARG> a valid directory" 1
+			[ -d "$OPTARG" ] && unitsd="$OPTARG" || error "Not <$OPTARG> a valid directory." 1
 			;;
 		*)
 			exit 2
@@ -49,8 +69,7 @@ done
 # if not specified, then by default we enable everything
 [ -z $unit ] && unit="all" && oper="e"
 
-# Available units
-units=( git blog wiki irc proj all )
+# Unit directory
 unitsd=${unitsd:="./units"}
 unitsd=$(echo $unitsd | sed 's:/*$::') # Remove trailing slash
 
@@ -59,9 +78,19 @@ unitsd=$(echo $unitsd | sed 's:/*$::') # Remove trailing slash
 	|| echo "Unit <$unit> is supported!"
 
 # Check if we are disabeling, that we have a replacement unit
-[ $oper == "d" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>" 1
+[ $oper == "d" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>." 1
 [ $oper == "e" ] && [ $unit != "all" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
 
 # Everything is valid, start setting up.
 #cp $unitsd/* /etc/nginx/sites-available/
 echo TODO: Setup links, and delete links if needed
+
+if [ $oper == 'e' ]
+then
+	echo Enabling $unit
+elif [ $oper == 'd' ]
+then
+	echo Disabling $unit
+else
+	error "No operation set." 1
+fi
