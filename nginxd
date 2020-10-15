@@ -8,7 +8,7 @@ units=( git blog wiki irc proj all )
 RED='\033[0;31m'
 NC='\033[0m'
 
-# Sow the help menu
+# Show the help menu
 help_menu () {
 	echo "Welcome!"
 	echo -e "e\t->\tEnable a unit."
