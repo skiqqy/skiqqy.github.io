@@ -29,7 +29,19 @@ link () {
 	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
 }
 
-# Enable or disable all units
+# Adds a unit so that nginx can use it, also sets up sym links.
+# add [unit]
+add () {
+	echo TODO: Enable $1
+}
+
+# Remove a unit so that nginx does not use it anymore, also sets up sym links.
+# remove [unit]
+remove () {
+	echo TODO: Remove $1
+}
+
+# Enable or disable all units.
 # all [ a | d ]
 all () {
 
@@ -62,7 +74,7 @@ all () {
 
 	echo "Adding units ( ${ADD[@]} )"
 	echo "Removing units ( ${REMOVE[@]} )"
-	echo TODO: Add and remove units using ADD,REMOVE
+	echo TODO: Add and remove units using add,remove
 }
 
 # Handle arguments and do basic error checking
@@ -99,20 +111,20 @@ unitsd=$(echo $unitsd | sed 's:/*$::') # Remove trailing slash
 	|| echo "Unit <$unit> is supported!"
 
 # Check if we are disabeling, that we have a replacement unit
-[ $oper == "d" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>." 1
+[ $oper == "d" ] && [ $unit != "all" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>." 1
 [ $oper == "e" ] && [ $unit != "all" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
 
-# Everything is valid, start setting up.
-echo TODO: Setup links, and delete links if needed
-
-# Perform tasks
-if [ $unit == "all"]
+# Everything is valid, Perform tasks
+if [ $unit == "all" ]
 then
 	all $oper
 elif [ $oper == 'e' ]
 then
-	echo Enabling $unit
+	add $unit
+	remove "d$unit"
 elif [ $oper == 'd' ]
+	add "d$unit"
+	remove $unit
 then
 	echo Disabling $unit
 else
