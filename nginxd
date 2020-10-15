@@ -35,12 +35,15 @@ link () {
 # add [unit]
 add () {
 	echo TODO: Enable $1
+	cp $unitsd/$1 /etc/nginx/sites-available
+	link $1
 }
 
 # Remove a unit so that nginx does not use it anymore, also sets up sym links.
 # remove [unit]
 remove () {
 	echo TODO: Remove $1
+	rm /etc/nginx/sites-enabled/$1
 }
 
 # Enable or disable all units.
