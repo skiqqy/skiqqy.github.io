@@ -34,7 +34,7 @@ link () {
 # Adds a unit so that nginx can use it, also sets up sym links.
 # add [unit]
 add () {
-	echo TODO: Enable $1
+	echo Enabling $1
 	cp $unitsd/$1 /etc/nginx/sites-available
 	link $1
 }
@@ -42,7 +42,7 @@ add () {
 # Remove a unit so that nginx does not use it anymore, also sets up sym links.
 # remove [unit]
 remove () {
-	echo TODO: Remove $1
+	echo Removing $1
 	rm -f /etc/nginx/sites-enabled/$1
 }
 
@@ -137,3 +137,6 @@ then
 else
 	error "No operation set." 1
 fi
+
+# Finally we test the new configs, and restart nginx
+service nginx testconfig && systemctl restart nginx || error "nginx config test failed..." 1
