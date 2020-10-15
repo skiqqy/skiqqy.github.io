@@ -59,7 +59,7 @@ unitsd=${unitsd:="./units"}
 
 # Check if we are disabeling, that we have a replacement unit
 [ $oper == "d" ] && [[ ! -f "$unitsd/d$unit" ]] && error "Cannot find replacement unit for <$unit>" 1
-[ $oper == "e" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
+[ $oper == "e" ] && [ $unit != "all" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
 
 # Everything is valid, start setting up.
 #cp $unitsd/* /etc/nginx/sites-available/
