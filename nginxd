@@ -42,12 +42,11 @@ remove () {
 }
 
 # Enable or disable all units.
-# all [ a | d ]
+# all [ e | d ]
 all () {
-
 	# Test and check valid args
-	[ -z $1 ] && error "[ALL] Not given a flag."
-	! [[ $1 == 'e' || $1 == 'd' ]] && error "[ALL] Not given a valid flag."
+	[ -z $1 ] && error "[ALL] Not given a flag." 1
+	! [[ $1 == 'e' || $1 == 'd' ]] && error "[ALL] Not given a valid flag." 1
 
 	REMOVE=()
 	ADD=()
