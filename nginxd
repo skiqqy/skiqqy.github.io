@@ -6,6 +6,7 @@
 # Available units
 units=( git blog wiki irc proj all )
 
+# Sow the help menu
 help_menu () {
 	echo "Welcome!"
 	echo -e "e\t->\tEnable a unit."
@@ -14,21 +15,23 @@ help_menu () {
 	echo -e "h\t->\tShows this message."
 }
 
+# Display an error message and exit.
+# error [message] [exit code]
 error () {
-	# error [message] [exit code]
 	echo "[ERROR] $1"
 	exit $2
 }
 
+# links available site to enabled.
+# link [unit]
 link () {
-	# links available site to enabled.
-	# link [unit]
 	[ ! -f /etc/nginx/sites-available/$1 ] && error "The unit <$1> file cannot be linked." 1
 	ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/$1
 }
 
+# Enable or disable all units
+# all [ a | d ]
 all () {
-	# $1 -> Enable or disable
 
 	# Test and check valid args
 	[ -z $1 ] && error "[ALL] Not given a flag."
@@ -38,10 +41,28 @@ all () {
 	ADD=()
 	if [ $1 == 'e' ]
 	then
-		echo TODO: Append units to add, and disables to remove
+		for u in "${units[@]}"
+		do
+			if [ $u != "all" ]
+			then
+				ADD+=("$u")
+				REMOVE+=("d$u")
+			fi
+		done
 	else
-		echo TODO: Inverse of above
+		for u in "${units[@]}"
+		do
+			if [ $u != "all" ]
+			then
+				REMOVE+=("$u")
+				ADD+=("d$u")
+			fi
+		done
 	fi
+
+	echo "Adding units ( ${ADD[@]} )"
+	echo "Removing units ( ${REMOVE[@]} )"
+	echo TODO: Add and remove units using ADD,REMOVE
 }
 
 # Handle arguments and do basic error checking
@@ -82,10 +103,13 @@ unitsd=$(echo $unitsd | sed 's:/*$::') # Remove trailing slash
 [ $oper == "e" ] && [ $unit != "all" ] && [[ ! -f "$unitsd/$unit" ]] && error "Cannot find unit file for <$unit>" 1
 
 # Everything is valid, start setting up.
-#cp $unitsd/* /etc/nginx/sites-available/
 echo TODO: Setup links, and delete links if needed
 
-if [ $oper == 'e' ]
+# Perform tasks
+if [ $unit == "all"]
+then
+	all $oper
+elif [ $oper == 'e' ]
 then
 	echo Enabling $unit
 elif [ $oper == 'd' ]
