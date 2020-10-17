@@ -37,6 +37,7 @@ domains = {
                 {"name": "blog", "type": "A"},
                 {"name": "pay", "type": "A"},
                 {"name": "wiki", "type": "A"},
+                {"name": "files", "type": "A"},
             ]
         }
 
