@@ -4,23 +4,23 @@
 <meta name=Description content="Skiqqy Cochranes Home Page">
 <style>
 	body{
-		text-align:center;
-		overflow-y:scroll;
-		font:calc(0.75em + 1vmin) monospace
+		overflow-y:scroll;font:16px monospace,monospace
 	}
 
-	pre pre{
-		text-align:left;
-		display:inline-block
+	img, .c{
+		display:table-cell;max-width:999px;max-width:80ch
 	}
 
-	img{
-		max-width:57ch;
-		display:block;
-		height:auto;
-		width:100%
+	pre{
+		margin:0;overflow-x:hidden
 	}
-	
+
+	@media(max-width:999px){
+		.c{
+			display:block;font-size:1.94vw
+		}
+	}
+
 	@media(prefers-color-scheme:dark){
 		body{
 			background:#000;color:#fff
@@ -36,15 +36,21 @@
 		text-align: center;
 		font-size: 30px;
 	}
-</style><pre>
+</style>
 <div class="header"><h1>Skiqqy</h1>~ Pronounced skippy</div>
-<a href=./setup.html>My Setup</a>  <a href=https://blog.skiqqy.xyz>Blog</a>  <a href=./projects.html>Projects</a>  <a href=https://github.com/skiqqy>My Github</a> <a href=https://wiki.skiqqy.xyz/>Wiki</a>
+</style><div style="display:table;margin:16px auto"><div class=c><pre style="top:0;position:sticky;user-select:none;padding-right:64px">
 
-<a href=https://git.skiqqy.xyz/>My Git Server</a>  <a href=https://irc.skiqqy.xyz/>IRC Webclient (Channel: #club45)</a>
+<a href=/ style="text-decoration:none;color:white">Skiqqy</a>
 
+<a href=./setup.html>My Setup</a>
+<a href=https://blog.skiqqy.xyz>Blog</a>
+<a href=./projects.html>Projects</a>
+<a href=https://github.com/skiqqy>My Github</a>
+<a href=https://wiki.skiqqy.xyz/>Wiki</a>
+<a href=https://git.skiqqy.xyz/>My Git Server</a>
+<a href=https://irc.skiqqy.xyz/>IRC Webclient</a>
 <a href=https://discord.gg/hgqgkuS>C45 Discord</a>
-
-<pre>
+</pre></div><div class=c><pre>
 +-------------------------------------------------------+
 |                                                       |
 |                     About Me                          |
@@ -128,8 +134,5 @@
 |                                                       |
 +-------------------------------------------------------+
 
-<div style='height:200px'>
-
-<a href="https://github.com/kisslinux/website" target=blank_>Inspiration for this website</a>
-
-</pre></pre>
+<a href="https://k1ss.org/">Inspired by</a>
+</pre></div></div>
