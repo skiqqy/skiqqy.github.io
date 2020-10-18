@@ -38,6 +38,7 @@ domains = {
                 {"name": "pay", "type": "A"},
                 {"name": "wiki", "type": "A"},
                 {"name": "files", "type": "A"},
+                {"name": "mail", "type": "MX"},
             ]
         }
 
@@ -60,7 +61,11 @@ for domain in domains:
     for sub in domains[domain]:
         post[0]["type"] = sub["type"]
         post[0]["name"] = sub["name"]
-        post[0]["data"] = ip
+        if sub["type"] != "MX":
+            post[0]["data"] = ip
+        else:
+            post[0]["data"] = domain
+            post[0]["priority"] = 0
         post[0]["ttl"] = 3600
 
         # Do the put
