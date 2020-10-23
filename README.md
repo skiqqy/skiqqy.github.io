@@ -1,5 +1,10 @@
-# yggpi
-This is my website root, I plan on improving it over time
+# Skiqqy.xyz
+This is my website.
+
+## Building
+````
+$ ./build.sh
+````
 
 ## Static Blog
 The goal of this website is to serve 'static' content that gets updated
