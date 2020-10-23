@@ -66,7 +66,7 @@ void genBP(char *file) {
 	curr = fopen(file, "r");
 
 	// just for debug
-	echoFile(fopen(file, "r"));
+	//echoFile(fopen(file, "r"));
 
 	//Begin parsing the file.
 	next();
