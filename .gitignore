@@ -1,4 +1,5 @@
 *.swp
+site/
 bin/
 obj/
 blogs.html
