@@ -51,9 +51,9 @@
 |                                                       |
 +-------------------------------------------------------+
 
-<a href=./assets/media/dwm2.png>Image 1:</a>
-<img src="./assets/media/dwm2.png">
-<a href=./assets/media/dwm1.png>Image 2:</a>
-<img src="./assets/media/dwm1.png">
-<a href=./assets/media/dwm3.png>Image 3:</a>
-<img src="./assets/media/dwm3.png">
+<a href=../assets/media/dwm2.png>Image 1:</a>
+<img src="../assets/media/dwm2.png">
+<a href=../assets/media/dwm1.png>Image 2:</a>
+<img src="../assets/media/dwm1.png">
+<a href=../assets/media/dwm3.png>Image 3:</a>
+<img src="../assets/media/dwm3.png">
