@@ -16,7 +16,7 @@ The goal of this website is to serve 'static' content that gets updated
 through scripts, this is to reduce bloat, and to ensure a fast website.
 To create the 'full' website, it is important to first run,
 ````
-make blog
+$ make blog
 ````
 as this will create blog posts from the files found in `blogs/RawBlogs`, and
 and setup all the links and stuff for them, these blog files are written
