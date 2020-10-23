@@ -3,6 +3,11 @@ This is my website.
 
 ## Building
 ````
+$ make
+````
+
+## Static site
+````
 $ ./build.sh
 ````
 

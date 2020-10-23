@@ -4,7 +4,9 @@ CC=gcc
 FLAGS=-Wall -pedantic
 EXE=bin/GenBlog
 
-all: install
+all: comp blog build
+
+comp: install
 	$(CC) $(FLAGS) src/GenBlog.c -o $(EXE)
 
 debug: install
@@ -12,16 +14,17 @@ debug: install
 
 install:
 	mkdir -p bin
-	mkdir -p obj
 	mkdir -p blogs
 
 clean:
 	rm -rf blogs/*.html
 	rm -rf ./blogs.html
-	rm -rf obj
 	rm -rf bin
 
-blog: clean all
+build:
+	./build.sh
+
+blog: comp
 	@# Reset all blogs to start build.
 	@# Setup boilerplate html files for blog files
 	-@for blog in ./blogs/RawBlogs/*.blog ; do \
