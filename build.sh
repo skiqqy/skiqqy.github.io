@@ -15,7 +15,7 @@ conv () {
 	sed -E '/%%BODY%%/d'
 }
 
-mkdir site
+mkdir -p site
 for file in raw/*.txt
 do
 	case $file in
