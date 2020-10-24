@@ -2,17 +2,17 @@
 |                                                       |
 |                      Private                          |
 |                                                       |
-|  * KCC: Kak C Compiler, found here ^/skiqqy/kcc.      |
+|  * pizza, found here ^/skiqqy/pizza                   |
 |                                                       |
-|  * Discord bot, found ^/skiqqy/C45DiscordBot          |
+|  * cmesg, found here ^/skiqqy/cmesg                   |
 |                                                       |
-|  * cmesg, found <a href=https://github.com/skippy404/cmesg target=blank_>here</a>.                                 |
+|  * Discord bot, found here ^/skiqqy/C45DiscordBot     |
 |                                                       |
-|  * Text Editor 'ted', found <a href=https://github.com/deavmi/ped target=blank_>here</a>.                     |
+|  * Text Editor 'ted', found here ^/deavmi/ped         |
 |                                                       |
-|  * This website, found <a href=https://github.com/skippy404/skippy404.github.io target=blank_>here</a>.                          |
+|  * This website, found here ^/skiqqy/skiqqy.github.io |
 |                                                       |
-|  * DChess, found <a href=https://github.com/skippy404/DChess target=blank_>here</a>.                                |
+|  * DChess, found here ^/skiqqy/DChess                 |
 |                                                       |
 +-------------------------------------------------------+
 
@@ -23,6 +23,16 @@
 |  * CRXN, more details can be found <a href=https://deavmi.github.io/projects/crxn target=blank_>here</a>.              |
 |                                                       |
 |  * BNet, an IRC network, more info can be found <a href=https://deavmi.github.io/projects/bonobonet target=blank_>here</a>. |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
+|                                                       |
+|                  "Dead" Projects                      |
+|       These are projects that develeopment has        |
+|       stopped on, Hopefully they will be revived.     |
+|                                                       |
+|  * KCC: Kak C Compiler, found here ^/skiqqy/kcc       |
 |                                                       |
 +-------------------------------------------------------+
 
