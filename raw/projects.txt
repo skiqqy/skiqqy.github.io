@@ -84,4 +84,23 @@
 |  * 3rd Year, 1st Semester - Food review website       |
 |    using flask (python), redis, neo4j.                |
 |                                                       |
+|  * 3rd Year, 2nd Semester - Multi-Client/Server       |
+|    chat program. Both client and server written in    |
+|    Java.                                              |
+|                                                       |
+|  * 3rd Year, 2nd Semester - TCP and RBUDP file        |
+|    sharing program. Written in Java.                  |
+|                                                       |
+|  * 3rd Year, 2nd Semester - NAT Simulation, that is   |
+|    a fully simulated "Internet Environment", with     |
+|    the following simulated protocals: IP, TCP, UDP    |
+|    Ethernet Frames, DHCP, ICMP. Written in Java.      |
+|                                                       |
+|  * 3rd Year, 2nd Semester - VoIP/Messaging program    |
+|    Using TCP for messaging, and for VoIP we use UDP   |
+|    packets for sending the audio streams. Client for  |
+|    Making and recieving calls/ conference calls, as   |
+|    well as direct and or group messaging. Both server |
+|    and client are written in Java.                    |
+|                                                       |
 +-------------------------------------------------------+
