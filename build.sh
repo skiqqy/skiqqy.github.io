@@ -8,8 +8,10 @@ conv () {
 
 	# ^/name -> https://github.com/name
 	# */name.domain -> https://name.domain
+	# !/name.domain -> http://name.domain
 	sed -E "s|(\\^/)([^ \)]*)|^\/<a href=$HOST/\2>\2</a>|g" |
 	sed -E "s|(\\*/)([^ \)]*)|*\/<a href=https:\/\/\2/>\2</a>|g" |
+	sed -E "s|(\\!/)([^ \)]*)|*\/<a href=http:\/\/\2/>\2</a>|g" |
 
 	sed -E '/%%BODY%%/r /dev/stdin' raw/template.html |
 	sed -E '/%%BODY%%/d'
