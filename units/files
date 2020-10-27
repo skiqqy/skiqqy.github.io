@@ -2,8 +2,7 @@ server {
 	server_name files.skiqqy.xyz;
 
 	location / {
-		#proxy_pass http://localhost:87; # Raspberry pi
-		proxy_pass http://192.168.68.102:84; # Desktop
+		proxy_pass http://localhost:87;
 		proxy_set_header Host $host;
 		proxy_set_header X-Real-IP $remote_addr;
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
