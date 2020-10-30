@@ -130,9 +130,9 @@ then
 	add $unit
 	remove "d$unit"
 elif [ $oper == 'd' ]
+then
 	add "d$unit"
 	remove $unit
-then
 	echo Disabling $unit
 else
 	error "No operation set." 1
