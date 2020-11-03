@@ -133,8 +133,8 @@
 |    that was padded, and will use that key to decrypt  |
 |    the next process, this process continues until     |
 |    all packets are recieved. This is a super          |
-|    simplified explanation of the security, for more   |
-|    details please see the resources below:            |
+|    simplified explanation of the security. Written    |
+|    in Java, details can be found below:               |
 |    - <a href=/assets/CS354/project5/report.pdf>Project Report</a>.                                  |
 |    - <a href=/assets/CS354/project5/spec.pdf>Project Specification</a>.                           |
 |                                                       |
