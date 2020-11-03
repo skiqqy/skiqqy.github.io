@@ -1,5 +1,5 @@
 # Skiqqy.xyz
-This is my website.
+This is my website, which is hosted [here](https://skiqqy.xyz).
 
 ## Building
 ````
