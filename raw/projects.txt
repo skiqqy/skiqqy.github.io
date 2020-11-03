@@ -88,12 +88,12 @@
 |    chat program. Both client and server written in    |
 |    Java. For more details, please see:                |
 |    - <a href=/assets/CS354/project1/report.pdf>Project Report</a>.                                  |
-|    - <a href=/assets/CS354/project1/report.pdf>Project Specification</a>.                           |
+|    - <a href=/assets/CS354/project1/spec.pdf>Project Specification</a>.                           |
 |                                                       |
 |  * 3rd Year, 2nd Semester - TCP and RBUDP file        |
 |    sharing program. Written in Java. More details:    |
 |    - <a href=/assets/CS354/project2/report.pdf>Project Report</a>.                                  |
-|    - <a href=/assets/CS354/project2/report.pdf>Project Specification</a>.                           |
+|    - <a href=/assets/CS354/project2/spec.pdf>Project Specification</a>.                           |
 |                                                       |
 |  * 3rd Year, 2nd Semester - NAT Simulation, that is   |
 |    a fully simulated "Internet Environment", with     |
@@ -101,7 +101,7 @@
 |    Ethernet Frames, DHCP, ICMP. Written in Java.      |
 |    For more details, see below:                       |
 |    - <a href=/assets/CS354/project3/report.pdf>Project Report</a>.                                  |
-|    - <a href=/assets/CS354/project3/report.pdf>Project Specification</a>.                           |
+|    - <a href=/assets/CS354/project3/spec.pdf>Project Specification</a>.                           |
 |                                                       |
 |  * 3rd Year, 2nd Semester - VoIP/Messaging program    |
 |    Using TCP for messaging, and for VoIP we use UDP   |
@@ -110,7 +110,7 @@
 |    well as direct and or group messaging. Both server |
 |    and client are written in Java. Details:           |
 |    - <a href=/assets/CS354/project4/report.pdf>Project Report</a>.                                  |
-|    - <a href=/assets/CS354/project4/report.pdf>Project Specification</a>.                           |
+|    - <a href=/assets/CS354/project4/spec.pdf>Project Specification</a>.                           |
 |                                                       |
 |  * 3rd Year, 2nd Semester - P2P File hosting/sharing  |
 |    system, which is made up of a central server which |
@@ -136,6 +136,6 @@
 |    simplified explanation of the security, for more   |
 |    details please see the resources below:            |
 |    - <a href=/assets/CS354/project5/report.pdf>Project Report</a>.                                  |
-|    - <a href=/assets/CS354/project5/report.pdf>Project Specification</a>.                           |
+|    - <a href=/assets/CS354/project5/spec.pdf>Project Specification</a>.                           |
 |                                                       |
 +-------------------------------------------------------+
