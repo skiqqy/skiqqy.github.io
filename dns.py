@@ -59,17 +59,20 @@ if ip == "":
 # Construct the post data
 for domain in domains:
     post = [{}]
+    req_url = url + "v1/domains/" + domain + "/records/A/@"
+    post[0]["type"] = "A"
+    post[0]["name"] = "@"
+    post[0]["data"] = ip
+    post[0]["ttl"] = 600
+    r = requests.put(req_url, headers=header, json=post)
+    print("Refreshing <" + domain + "> ---> " + str(r))
     for sub in domains[domain]:
         post[0]["type"] = sub["type"]
         post[0]["name"] = sub["name"]
-        if sub["type"] != "MX":
-            post[0]["data"] = ip
-        else:
-            post[0]["data"] = domain
-            post[0]["priority"] = 0
+        post[0]["data"] = ip
         post[0]["ttl"] = 3600
 
         # Do the put
         req_url = url + "v1/domains/" + domain + "/records/" + sub["type"] + "/" + sub["name"]
         r = requests.put(req_url, headers=header, json=post)
-        print(r)
+        print("Refreshing <" + sub["name"] + "." + domain + "> ---> " + str(r))
