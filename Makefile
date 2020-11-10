@@ -6,6 +6,8 @@ EXE=bin/GenBlog
 
 all: comp blog build
 
+demo: comp blog buildd
+
 comp: install
 	$(CC) $(FLAGS) src/GenBlog.c -o $(EXE)
 
@@ -23,6 +25,9 @@ clean:
 
 build:
 	./build.sh
+
+buildd:
+	./build.sh -d
 
 blog: comp
 	@# Reset all blogs to start build.
