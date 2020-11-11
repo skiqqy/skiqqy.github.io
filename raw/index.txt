@@ -27,12 +27,41 @@
 +-------------------------------------------------------+
 
 +-------------------------------------------------------+
+|               About this website.                     |
+|                                                       |
+|  This website serves as my little footprint on the    |
+|  amazing creation that is the internet.               |
+|                                                       |
+|  Currently this website is running inside a docker    |
+|  container (found <a href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most      |
+|  of the services (git, blog, etc) are running a       |
+|  docker container themselves on the pi, however,      |
+|  the more heavy services (pleroma etc) run on an      |
+|  entire different machine inside my local network,    |
+|  and gets accessed through a <a href=https://www.nginx.com/>reverse proxy</a> on my pi.  |
+|                                                       |
+|  An important statement to make is, everything        |
+|  that is hosted on the skiqqy.xyz domain, is hosted   |
+|  on my own machines locally.                          |
+|                                                       |
+|  Another cool inclusion of my website, is the         |
+|  <a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes as they are from  |
+|  upstream as they are pushed.                         |
+|                                                       |
+|  If you are interested in more more in depth          |
+|  explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,    |
+|  as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.                                 |
+|                                                       |
+|                                                       |
++-------------------------------------------------------+
+
++-------------------------------------------------------+
 |                                                       |
 |                      Friends                          |
 |                                                       |
-|   * Please go take a look at my friend Tristan, aka   |
-|     "The king of subnets"/"alloca go brrr", his       |
-|     website located here !/deavmi.assigned.network    |
+|  * Please go take a look at my friend Tristan, aka    |
+|    "The king of subnets"/"alloca go brrr", his        |
+|    website located here !/deavmi.assigned.network     |
 |                                                       |
 +-------------------------------------------------------+
 
