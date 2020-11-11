@@ -23,7 +23,7 @@ main () {
 	do
 		case $opt in
 			d)
-				dev="<h4 class=dev>Please note, this is the development page, things may be broken\.<\/h4><details><summary>Details<\/summary>This version of my website is hosted inside a <a href=https:\/\/github.com\/skiqqy\/skiqqy-docker>docker container<\/a> and pulls from origin\/dev every 10 seconds, hence it is possible for the site to be unstable, this is only for demo purposes\.<\/details>"
+				dev="<h4 class=dev>Please note, this is the development page, things may be broken\.<\/h4><h4 class=dev>Last built on $(date)\.<\/h4><details><summary>Details<\/summary>This version of my website is hosted inside a <a href=https:\/\/github.com\/skiqqy\/skiqqy-docker>docker container<\/a> and pulls from origin\/dev every 10 seconds, hence it is possible for the site to be unstable, this is only for demo purposes\.<\/details>"
 				;;
 			*)
 				exit 2
