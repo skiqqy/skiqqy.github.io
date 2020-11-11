@@ -45,8 +45,8 @@
 |  on my own machines locally.                          |
 |                                                       |
 |  Another cool inclusion of my website, is the         |
-|  <a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes as they are from  |
-|  upstream as they are pushed.                         |
+|  <a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes from upstream as  |
+|  they are pushed.                                     |
 |                                                       |
 |  If you are interested in more more in depth          |
 |  explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,    |
