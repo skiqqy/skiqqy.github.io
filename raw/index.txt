@@ -59,6 +59,8 @@
 |                                                       |
 |                 Contact Details                       |
 |                                                       |
+| * Fediverse: @x@social.skiqqy.xyz                     |
+|                                                       |
 | * Twitter: @posix_patrol                              |
 |                                                       |
 | * Instagram: @_skiqqy                                 |
