@@ -56,6 +56,3 @@ Normal Text Goes Here.
 |                          |
 +--------------------------+
 ````
-
-## Reason for C
-Its fast. Aint no body got time for bloated stuff.
