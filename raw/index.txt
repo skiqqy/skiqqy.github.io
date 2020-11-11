@@ -52,7 +52,6 @@
 |  explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,    |
 |  as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.                                 |
 |                                                       |
-|                                                       |
 +-------------------------------------------------------+
 
 +-------------------------------------------------------+
