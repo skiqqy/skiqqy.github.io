@@ -27,15 +27,15 @@
 +-------------------------------------------------------+
 
 +-------------------------------------------------------+
-|               About this website.                     |
+|                 About this website.                   |
 |                                                       |
 |  This website serves as my little footprint on the    |
 |  amazing creation that is the internet.               |
 |                                                       |
 |  Currently this website is running inside a docker    |
 |  container (found <a href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most      |
-|  of the services (git, blog, etc) are running a       |
-|  docker container themselves on the pi, however,      |
+|  of the services (git, blog, etc) are running inside  |
+|  of a docker container, which is on the pi, however,  |
 |  the more heavy services (pleroma etc) run on an      |
 |  entire different machine inside my local network,    |
 |  and gets accessed through a <a href=https://www.nginx.com/>reverse proxy</a> on my pi.  |
