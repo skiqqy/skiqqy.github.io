@@ -18,6 +18,9 @@
 | * I love low level coding, my language of choice      |
 |   is C.                                               |
 |                                                       |
+| * I love (LOVE!) mathematics, more specifically,      |
+|   abstract algebra (rings, fields and groups).        |
+|                                                       |
 | * Vim or gtfo.                                        |
 |                                                       |
 | * Just read the man-pages bro.                        |
