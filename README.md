@@ -2,16 +2,21 @@
 This is my website, which is hosted [here](https://skiqqy.xyz).
 
 ## Building
+There are two approaches
 ````
-$ make
+$ make # Build everything.
+````
+Or
+````
+$ make demo # Builds everything with injected warning text.
 ````
 
-## Static site
+### Static site
 ````
-$ ./build.sh
+$ make build
 ````
 
-## Static Blog
+### Static Blog
 The goal of this website is to serve 'static' content that gets updated
 through scripts, this is to reduce bloat, and to ensure a fast website.
 To create the 'full' website, it is important to first run,
