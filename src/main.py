@@ -16,16 +16,17 @@ def main():
 
 @app.route('/domain/status/<dom>', methods = ["GET"])
 def domstatus(dom):
+    results = []
     if dom == 'all':
-        dom = ''
         for sub in domains:
             ip = os.popen('ping -c 1  -w 5 %s.%s | head -1 | cut -d \" \" -f 3' % (sub, main_domain)).read()
-            dom += sub + ':' + ip + '\n'
+            results.append("%s.%s:%s" % (sub, main_domain, ip))
     elif dom not in domains:
-        dom = "unknown domain"
+        results = "unknown domain"
     else:
-        dom += ':' + str(os.popen('ping -c 1  -w 5 %s.%s | head -1 | cut -d \" \" -f 3' % (dom, main_domain)).read())
-    return dom
+        ip = os.popen('ping -c 1  -w 5 %s.%s | head -1 | cut -d \" \" -f 3' % (dom, main_domain)).read()
+        results.append("%s.%s:%s" % (dom, main_domain, ip))
+    return render_template('domain_status.html', results=results, TITLE=str("Results for " + dom))
 
 def setup():
     app.template_folder = "../assets/api_templates/"
