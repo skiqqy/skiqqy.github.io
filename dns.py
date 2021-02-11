@@ -31,6 +31,7 @@ header={
 # Domains and subdomains
 domains = {
         "skiqqy.xyz":[
+                {"name": "api", "type": "A"},
                 {"name": "git", "type": "A"},
                 {"name": "irc", "type": "A"},
                 {"name": "proj", "type": "A"},
