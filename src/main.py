@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, jsonify
 from hashlib import sha256
 from datetime import datetime
 import os
+import requests
 # My libs
 
 domain = 'skiqqy.xyz'
@@ -18,10 +19,7 @@ def getip(dom):
 
 # Checks to see that we are not being redirected to an nginx page.
 def not_nginx(dom):
-    # Yes i know i can use requests, and I know its not efficeint to pass
-    # calls to the shell, but this is just temporary.
-    nginx = os.popen('curl -s %s | head -5 | grep nginx' % dom).read()
-    if nginx == '':
+    if requests.get(dom).status_code == 200:
         return True
     return False
 
