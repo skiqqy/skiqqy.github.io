@@ -19,6 +19,14 @@
 		font-size:15
 	}
 
+	.succ {
+		color:lime
+	}
+
+	.fail {
+		color:red
+	}
+
 	input[type=text] {
 		border: 2px solid black;
 		border-radius: 4px;
@@ -26,7 +34,15 @@
 </style>
 <div class=header>{{ TITLE }}</div>
 <div class=para>
-	{% for res in results %}
-	<p>{{ res }}</p>
+	{% autoescape false %}
+	{{ INFO }}
+	{% endautoescape %}
+	<h2>Status</h2>
+	{% for res in up%}
+	<p class=succ>{{ res }}</p>
 	{% endfor %}
+	{% for res in down%}
+	<p class=fail>{{ res }}</p>
+	{% endfor %}
+	{{ ERROR }}
 </div>
