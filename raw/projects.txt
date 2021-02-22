@@ -41,7 +41,7 @@
 |                  University Projects                  |
 |                                                       |
 |             Due to the fact that many of              |
-|            these projects are still being             | 
+|            these projects are still being             |
 |          used to asses students at SU, these          |
 |        repos must be set to private, in order         |
 |       to prevent students from copying my work        |
@@ -58,7 +58,7 @@
 |    solutions to form new solutions, written in        |
 |    java.                                              |
 |                                                       |
-|  * 2nd Year, 2nd Semester - Wrote a compiler for      | 
+|  * 2nd Year, 2nd Semester - Wrote a compiler for      |
 |    a pascal like language named ALAN standing for     |
 |    Another LANguage, includes scanning, parsing,      |
 |    typechecking, codegen (to the jvm using            |
