@@ -1,119 +1,96 @@
-+-------------------------------------------------------+
-|                                                       |
-|                     About Me                          |
-|                                                       |
-| * My name is Stephen Cochrane, but my friends call    |
-|   me Skippy (Written skiqqy).                         |
-|                                                       |
-| * curriculum vitae:                                   |
-|   There are 3 methods, shown below,                   |
-|   1. <code>$ man <(curl -s https://skiqqy.xyz/skiqqy.1)</code>     |
-|   2. <code>$ curl https://skiqqy.xyz/gencv | bash</code>           |
-|   3. Or you can download it <a href=./assets/CurriculumVitae.pdf>here</a>.                     |
-|                                                       |
-| * I am currently studying at Stellenbosh University   |
-|   a BSc in Computer Science, I am in my third year    |
-|   of studies.                                         |
-|                                                       |
-| * I love low level coding, my language of choice      |
-|   is C.                                               |
-|                                                       |
-| * I love (LOVE!) mathematics, more specifically,      |
-|   abstract algebra (rings, fields and groups).        |
-|                                                       |
-| * Vim or gtfo.                                        |
-|                                                       |
-| * Just read the man-pages bro.                        |
-|                                                       |
-| * Come water my flowers in animal crossing pls.       |
-|                                                       |
-+-------------------------------------------------------+
+<div class=box><div class=boxheader>About Me</div>
+* My name is Stephen Cochrane, but my friends call
+  me Skippy (Written skiqqy).
 
-+-------------------------------------------------------+
-|                 About this website.                   |
-|                                                       |
-|  This website serves as my little footprint on the    |
-|  amazing creation that is the internet.               |
-|                                                       |
-|  Currently this website is running inside a docker    |
-|  container (found <a href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most      |
-|  of the services (git, blog, etc) are running inside  |
-|  of a docker container, which is on the pi, however,  |
-|  the more heavy services (pleroma etc) run on an      |
-|  entire different machine inside my local network,    |
-|  and gets accessed through a <a href=https://www.nginx.com/>reverse proxy</a> on my pi.  |
-|                                                       |
-|  An important statement to make is, everything        |
-|  that is hosted on the skiqqy.xyz domain, is hosted   |
-|  on my own machines locally.                          |
-|                                                       |
-|  Another cool inclusion of my website, is the         |
-|  <a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes from upstream as  |
-|  they are pushed.                                     |
-|                                                       |
-|  If you are interested in more more in depth          |
-|  explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,    |
-|  as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.                                 |
-|                                                       |
-+-------------------------------------------------------+
+* curriculum vitae:
+  There are 3 methods, shown below,
+  1. <code>$ man <(curl -s https://skiqqy.xyz/skiqqy.1)</code>
+  2. <code>$ curl https://skiqqy.xyz/gencv | bash</code>
+  3. Or you can download it <a href=./assets/CurriculumVitae.pdf>here</a>.
 
-+-------------------------------------------------------+
-|                                                       |
-|                      Webring                          |
-|                                                       |
-|  * Please go take a look at my friend Tristan, aka    |
-|    "The king of subnets"/"alloca go brrr", his        |
-|    website located here !/deavmi.assigned.network     |
-|                                                       |
-|  * caskd "you are wrong"/"im german" denes            |
-|      - */redxen.eu                                    |
-|                                                       |
-|  * nova "something something weeb" __surname__        |
-|      - */novaburst.tilde.team                         |
-|                                                       |
-+-------------------------------------------------------+
+* I am currently studying at Stellenbosh University
+  a BSc in Computer Science, I am in my third year
+  of studies.
 
-+-------------------------------------------------------+
-|                                                       |
-|              What I consider Bloat                    |
-|                                                       |
-| * Any program that is not "minimal", in the sense     |
-|   that it does not conform to the unix philosophy     |
-|   of doing one thing, and doing that one thing well.  |
-|                                                       |
-| * If the program is not free as in <a href=https://www.gnu.org/philosophy/free-sw.html target=blank_>free</a>, then I       |
-|   assume the program is bloated and may be malware.   |
-|                                                       |
-| * Politics.                                           |
-|                                                       |
-| * Google.                                             |
-|                                                       |
-| * Facebook.                                           |
-|                                                       |
-+-------------------------------------------------------+
+* I love low level coding, my language of choice
+  is C.
 
-+-------------------------------------------------------+
-|                                                       |
-|                 Contact Details                       |
-|                                                       |
-| * Fediverse: @x@social.skiqqy.xyz                     |
-|                                                       |
-| * Twitter: @posix_patrol                              |
-|                                                       |
-| * Instagram: @_skiqqy                                 |
-|                                                       |
-| * Email: ohmyskippy@disroot.org                       |
-|                                                       |
-| * xmpp: ohmyskippy@disroot.org                        |
-|                                                       |
-| * Discord: Skiqqy#1159                                |
-|                                                       |
-+-------------------------------------------------------+
+* I love (LOVE!) mathematics, more specifically,
+  abstract algebra (rings, fields and groups).
 
-+-------------------------------------------------------+
-|                                                       |
-|                       Other                           |
-|                                                       |
-| * IRC: irc.skiqqy.xyz:6667                            |
-|                                                       |
-+-------------------------------------------------------+
+* Vim or gtfo.
+
+* Just read the man-pages bro.
+
+* Come water my flowers in animal crossing pls.
+</div>
+
+<div class=box><div class=boxheader>About this website</div>
+This website serves as my little footprint on the
+amazing creation that is the internet.
+
+Currently this website is running inside a docker
+container (found <a href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most
+of the services (git, blog, etc) are running inside
+of a docker container, which is on the pi, however,
+the more heavy services (pleroma etc) run on an
+entire different machine inside my local network,
+and gets accessed through a <a href=https://www.nginx.com/>reverse proxy</a> on my pi.
+
+An important statement to make is, everything
+that is hosted on the skiqqy.xyz domain, is hosted
+on my own machines locally.
+
+Another cool inclusion of my website, is the
+<a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes from upstream as
+they are pushed.
+
+If you are interested in more more in depth
+explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,
+as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.
+</div>
+
+<div class=box><div class=boxheader>Webring</div>
+* Please go take a look at my friend Tristan, aka
+  "The king of subnets"/"alloca go brrr", his
+  website located here !/deavmi.assigned.network
+
+* caskd "you are wrong"/"im german" denes
+    - */redxen.eu
+
+* nova "something something weeb" __surname__
+    - */novaburst.tilde.team
+</div>
+
+<div class=box><div class=boxheader>What I consider bloat</div>
+* Any program that is not "minimal", in the sense
+  that it does not conform to the unix philosophy
+  of doing one thing, and doing that one thing well.
+
+* If the program is not free as in <a href=https://www.gnu.org/philosophy/free-sw.html target=blank_>free</a>, then I
+  assume the program is bloated and may be malware.
+
+* Politics.
+
+* Google.
+
+* Facebook.
+</div>
+
+<div class=box><div class=boxheader>Contact Details</div>
+* Fediverse: @x@social.skiqqy.xyz
+
+* Twitter: @posix_patrol
+
+* Instagram: @_skiqqy
+
+* Email: ohmyskippy@disroot.org
+
+* xmpp: ohmyskippy@disroot.org
+
+* Discord: Skiqqy#1159
+</div>
+
+<div class=box><div class=boxheader>Other</div>
+* IRC: irc.skiqqy.xyz:6667
+</div>

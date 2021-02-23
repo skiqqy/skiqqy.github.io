@@ -1,16 +1,8 @@
-+-------------------------------------------------------+
-|                                                       |
-|                       My Hobbies                      |
-|                                                       |
-|       This page contains several links to my non      |
-|       CS hobbies that I participate in.               |
-|                                                       |
-+-------------------------------------------------------+
+<div class=box><div class=boxheader>My Hobbies</div>
+This page contains several links to my non CS hobbies
+that I participate in.
+</div>
 
-+-------------------------------------------------------+
-|                                                       |
-|                         Gaming                        |
-|                                                       |
-|   * My World of Warcraft homepage: <a href="/site/wow.html">here</a>               |
-|                                                       |
-+-------------------------------------------------------+
+<div class=box><div class=boxheader>Gaming</div>
+* My World of Warcraft homepage: <a href="/site/wow.html">here</a>.
+</div>
