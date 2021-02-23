@@ -1,125 +1,117 @@
 <div class=box><div class=boxheader>Private</div>
+<br>
 * pizza, found here ^/skiqqy/pizza
-
+<br><br>
 * cmesg, found here ^/skiqqy/cmesg
-
+<br><br>
 * Discord bot, found here ^/skiqqy/C45DiscordBot
-
+<br><br>
 * Text Editor 'ted', found here ^/deavmi/ped
-
+<br><br>
 * This website, found here ^/skiqqy/skiqqy.github.io
-
+<br><br>
 * DChess, found here ^/skiqqy/DChess
 </div>
 
-<div class=box><div class=boxheader>Community Projects (more than 2-3 devs)</div>
-* CRXN, more details can be found <a href=https://deavmi.github.io/projects/crxn target=blank_>here</a>.
-
-* BNet, an IRC network, more info can be found <a href=https://deavmi.github.io/projects/bonobonet target=blank_>here</a>.
+<div class=box><div class=boxheader>Community Projects (more than 2-3
+devs)</div>
+<br>
+* CRXN, more details can be found <a
+  href=https://deavmi.github.io/projects/crxn target=blank_>here</a>.
+<br><br>
+* BNet, an IRC network, more info can be found <a
+  href=https://deavmi.github.io/projects/bonobonet target=blank_>here</a>.
 </div>
 
 <div class=box><div class=boxheader>"Dead" Projects</div>
-These are projects that develeopment has stopped on,
-Hopefully they will be revived.
-
+<br>
+These are projects that develeopment has stopped on, Hopefully they will be
+revived.
+<br><br>
 * KCC: Kak C Compiler, found here ^/skiqqy/kcc
 </div>
 
 <div class=box><div class=boxheader>University Projects</div>
-Due to the fact that many of these projects are still
-being used to asses students at SU, these repos must
-be set to private, in order to prevent students from
+<br>
+Due to the fact that many of these projects are still being used to asses
+students at SU, these repos must be set to private, in order to prevent
+students from
 copying my work
-
-* 1st Year, 1st Semester - Lines of Action, a game
-  similar to <a href=https://www.eothello.com/#how-to-play target=blank_>othello</a>, written in java.
-
-* 1st Year, 2nd Semester - Obstacle Chess, Normal
-  chess rules, with new pieces introduced, such as
-  bombs, wall's, trapdoors, etc. Written in java.
-
-* 2nd Year, 1st Semester - Sudoku Solver, using
-  a heuristic algorithm + mutations on possible
-  solutions to form new solutions, written in
-  java.
-
-* 2nd Year, 2nd Semester - Wrote a compiler for
-  a pascal like language named ALAN standing for
-  Another LANguage, includes scanning, parsing,
-  typechecking, codegen (to the jvm using
-  <a href=http://jasmin.sourceforge.net/ target=blank_>jasmin</a>) the compiler was written in C.
-
-* 2nd Year, 2nd Semester - <a href=https://en.wikipedia.org/wiki/Brainfuck target=blank_>Brainfuck Intepreter</a>,
+<br><br>
+* 1st Year, 1st Semester - Lines of Action, a game similar to <a
+  href=https://www.eothello.com/#how-to-play target=blank_>othello</a>, written
+  in java.
+<br><br>
+* 1st Year, 2nd Semester - Obstacle Chess, Normal chess rules, with new pieces
+  introduced, such as bombs, wall's, trapdoors, etc. Written in java.
+<br><br>
+* 2nd Year, 1st Semester - Sudoku Solver, using a heuristic algorithm +
+  mutations on possible solutions to form new solutions, written in java.
+<br><br>
+* 2nd Year, 2nd Semester - Wrote a compiler for a pascal like language named
+  ALAN standing for Another LANguage, includes scanning, parsing, typechecking,
+  codegen (to the jvm using <a href=http://jasmin.sourceforge.net/
+  target=blank_>jasmin</a>) the compiler was written in C.
+<br><br>
+* 2nd Year, 2nd Semester - <a href=https://en.wikipedia.org/wiki/Brainfuck
+  target=blank_>Brainfuck Intepreter</a>,
   written in x86 Assembly.
-
-* 2nd Year, 2nd Semester - <a href=https://en.wikipedia.org/wiki/Huffman_coding target=blank_>Huffman Encoder</a>,
+<br><br>
+* 2nd Year, 2nd Semester - <a href=https://en.wikipedia.org/wiki/Huffman_coding
+  target=blank_>Huffman Encoder</a>,
   written in x86 Assembly
-
-* 3rd Year, 1st Semester - Process Scheduler
-  simulator, written in C.
-
-* 3rd Year, 1st Semester - Bank Transaction
-  simulator, using omp, and locks to prevent
-  race conditions, written in C.
-
-* 3rd Year, 1st Semester - Othello bot, using
-  MPI, and negamax search with alpha beta pruning
-  to find optimal moves, written in C.
-
-* 3rd Year, 1st Semester - Food review website
-  using flask (python), redis, neo4j.
-
-* 3rd Year, 2nd Semester - Multi-Client/Server
-  chat program. Both client and server written in
-  Java. For more details, please see:
-  - <a href=/assets/CS354/project1/report.pdf>Project Report</a>.
-  - <a href=/assets/CS354/project1/spec.pdf>Project Specification</a>.
-
-* 3rd Year, 2nd Semester - TCP and RBUDP file
-  sharing program. Written in Java. More details:
-  - <a href=/assets/CS354/project2/report.pdf>Project Report</a>.
-  - <a href=/assets/CS354/project2/spec.pdf>Project Specification</a>.
-
-* 3rd Year, 2nd Semester - NAT Simulation, that is
-  a fully simulated "Internet Environment", with
-  the following simulated protocals: IP, TCP, UDP
-  Ethernet Frames, DHCP, ICMP. Written in Java.
-  For more details, see below:
-  - <a href=/assets/CS354/project3/report.pdf>Project Report</a>.
-  - <a href=/assets/CS354/project3/spec.pdf>Project Specification</a>
-
-* 3rd Year, 2nd Semester - VoIP/Messaging program
-  Using TCP for messaging, and for VoIP we use UDP
-  packets for sending the audio streams. Client for
-  Making and recieving calls/ conference calls, as
-  well as direct and or group messaging. Both server
-  and client are written in Java. Details:
-  - <a href=/assets/CS354/project4/report.pdf>Project Report</a>.
-  - <a href=/assets/CS354/project4/spec.pdf>Project Specification</a>.
-
-* 3rd Year, 2nd Semester - P2P File hosting/sharing
-  system, which is made up of a central server which
-  handles minimal book-keeping. The actual file
-  transfer occurs in 2 stages, the first is a
-  handshake to ensure that the sender is talking to
-  the reciever and vice versa, this is done using
-  certificates and RSA encryption. Once the intial
-  handshake is completed, a 96 key is transmited
-  to the reciever encrypted using the recievers
-  public key (RSA encryption, the keys where passed
-  during the handshake). The sender will encrypt
-  the payload using that key, as well as generating
-  the next key that will be used and padding it into
-  the data. We then encrypt and send the packet.
-  This forms a <a href=https://en.wikipedia.org/wiki/One-time_pad>one-time-pad</a>, which is unbreakable.
-  The recieve uses the inital key that was recieved
-  from the secure handshake process to decrypt the
-  recieved packet, it then removes the included key
-  that was padded, and will use that key to decrypt
-  the next process, this process continues until
-  all packets are recieved. This is a super
-  simplified explanation of the security. Written
-  in Java, details can be found below:
-  - <a href=/assets/CS354/project5/report.pdf>Project Report</a>.
-  - <a href=/assets/CS354/project5/spec.pdf>Project Specification</a>.
+<br><br>
+* 3rd Year, 1st Semester - Process Scheduler simulator, written in C.
+<br><br>
+* 3rd Year, 1st Semester - Bank Transaction simulator, using omp, and locks to
+  prevent race conditions, written in C.
+<br><br>
+* 3rd Year, 1st Semester - Othello bot, using MPI, and negamax search with
+  alpha beta pruning to find optimal moves, written in C.
+<br><br>
+* 3rd Year, 1st Semester - Food review website using flask (python), redis,
+  neo4j.
+<br><br>
+* 3rd Year, 2nd Semester - Multi-Client/Server chat program. Both client and
+  server written in Java. For more details, please see:
+  <br>- <a href=/assets/CS354/project1/report.pdf>Project Report</a>.
+  <br>- <a href=/assets/CS354/project1/spec.pdf>Project Specification</a>.
+<br><br>
+* 3rd Year, 2nd Semester - TCP and RBUDP file sharing program. Written in Java.
+  More details:
+  <br>- <a href=/assets/CS354/project2/report.pdf>Project Report</a>.
+  <br>- <a href=/assets/CS354/project2/spec.pdf>Project Specification</a>.
+<br><br>
+* 3rd Year, 2nd Semester - NAT Simulation, that is a fully simulated "Internet
+  Environment", with the following simulated protocals: IP, TCP, UDP Ethernet
+  Frames, DHCP, ICMP. Written in Java.  For more details, see below:
+  <br>- <a href=/assets/CS354/project3/report.pdf>Project Report</a>.
+  <br>- <a href=/assets/CS354/project3/spec.pdf>Project Specification</a>
+<br><br>
+* 3rd Year, 2nd Semester - VoIP/Messaging program Using TCP for messaging, and
+  for VoIP we use UDP packets for sending the audio streams. Client for Making
+  and recieving calls/ conference calls, as well as direct and or group
+  messaging. Both server and client are written in Java. Details:
+  <br>- <a href=/assets/CS354/project4/report.pdf>Project Report</a>.
+  <br>- <a href=/assets/CS354/project4/spec.pdf>Project Specification</a>.
+<br><br>
+* 3rd Year, 2nd Semester - P2P File hosting/sharing system, which is made up of
+  a central server which handles minimal book-keeping. The actual file transfer
+  occurs in 2 stages, the first is a handshake to ensure that the sender is
+  talking to the reciever and vice versa, this is done using certificates and
+  RSA encryption. Once the intial handshake is completed, a 96 key is
+  transmited to the reciever encrypted using the recievers public key (RSA
+  encryption, the keys where passed during the handshake). The sender will
+  encrypt the payload using that key, as well as generating the next key that
+  will be used and padding it into the data. We then encrypt and send the
+  packet.  This forms a <a
+  href=https://en.wikipedia.org/wiki/One-time_pad>one-time-pad</a>, which is
+  unbreakable.  The recieve uses the inital key that was recieved from the
+  secure handshake process to decrypt the recieved packet, it then removes the
+  included key that was padded, and will use that key to decrypt the next
+  process, this process continues until all packets are recieved. This is a
+  super simplified explanation of the security. Written in Java, details can be
+  found below:
+  <br>- <a href=/assets/CS354/project5/report.pdf>Project Report</a>.
+  <br>- <a href=/assets/CS354/project5/spec.pdf>Project Specification</a>.
 </div>

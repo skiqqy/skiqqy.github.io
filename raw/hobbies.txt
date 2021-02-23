@@ -1,8 +1,9 @@
 <div class=box><div class=boxheader>My Hobbies</div>
-This page contains several links to my non CS hobbies
-that I participate in.
+<br>
+This page contains several links to my non CS hobbies that I participate in.
 </div>
 
 <div class=box><div class=boxheader>Gaming</div>
+<br>
 * My World of Warcraft homepage: <a href="/site/wow.html">here</a>.
 </div>

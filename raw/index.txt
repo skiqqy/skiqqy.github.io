@@ -1,96 +1,101 @@
 <div class=box><div class=boxheader>About Me</div>
+<br>
 * My name is Stephen Cochrane, but my friends call
   me Skippy (Written skiqqy).
-
+<br><br>
 * curriculum vitae:
   There are 3 methods, shown below,
-  1. <code>$ man <(curl -s https://skiqqy.xyz/skiqqy.1)</code>
-  2. <code>$ curl https://skiqqy.xyz/gencv | bash</code>
-  3. Or you can download it <a href=./assets/CurriculumVitae.pdf>here</a>.
-
+  <br>1. <code>$ man <(curl -s https://skiqqy.xyz/skiqqy.1)</code>
+  <br>2. <code>$ curl https://skiqqy.xyz/gencv | bash</code>
+  <br>3. Or you can download it <a href=./assets/CurriculumVitae.pdf>here</a>.
+<br><br>
 * I am currently studying at Stellenbosh University
   a BSc in Computer Science, I am in my third year
   of studies.
-
+<br><br>
 * I love low level coding, my language of choice
   is C.
-
+<br><br>
 * I love (LOVE!) mathematics, more specifically,
   abstract algebra (rings, fields and groups).
-
+<br><br>
 * Vim or gtfo.
-
+<br><br>
 * Just read the man-pages bro.
-
+<br><br>
 * Come water my flowers in animal crossing pls.
 </div>
 
 <div class=box><div class=boxheader>About this website</div>
+<br>
 This website serves as my little footprint on the
 amazing creation that is the internet.
-
-Currently this website is running inside a docker
-container (found <a href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most
-of the services (git, blog, etc) are running inside
-of a docker container, which is on the pi, however,
-the more heavy services (pleroma etc) run on an
-entire different machine inside my local network,
-and gets accessed through a <a href=https://www.nginx.com/>reverse proxy</a> on my pi.
-
-An important statement to make is, everything
-that is hosted on the skiqqy.xyz domain, is hosted
-on my own machines locally.
-
-Another cool inclusion of my website, is the
-<a href=https://dev.skiqqy.xyz target=blank_>dev server</a>, which reflects changes from upstream as
-they are pushed.
-
-If you are interested in more more in depth
-explanation of the setup, you can read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,
+<br><br>
+Currently this website is running inside a docker container (found <a
+href=https://github.com/skiqqy/skiqqy-docker>here</a>) on my raspberry pi. Most
+of the services (git, blog, etc) are running inside of a docker container,
+which is on the pi, however, the more heavy services (pleroma etc) run on an
+entire different machine inside my local network, and gets accessed through a
+<a href=https://www.nginx.com/>reverse proxy</a> on my pi.
+<br><br>
+An important statement to make is, everything that is hosted on the skiqqy.xyz
+domain, is hosted on my own machines locally.
+<br><br>
+Another cool inclusion of my website, is the <a href=https://dev.skiqqy.xyz
+target=blank_>dev server</a>, which reflects changes from upstream as they are
+pushed.
+<br><br>
+If you are interested in more more in depth explanation of the setup, you can
+read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,
 as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.
 </div>
 
 <div class=box><div class=boxheader>Webring</div>
+<br>
 * Please go take a look at my friend Tristan, aka
   "The king of subnets"/"alloca go brrr", his
   website located here !/deavmi.assigned.network
-
+<br><br>
 * caskd "you are wrong"/"im german" denes
-    - */redxen.eu
-
+  <br>  - */redxen.eu
+<br><br>
 * nova "something something weeb" __surname__
-    - */novaburst.tilde.team
+  <br>  - */novaburst.tilde.team
 </div>
 
 <div class=box><div class=boxheader>What I consider bloat</div>
+<br>
 * Any program that is not "minimal", in the sense
   that it does not conform to the unix philosophy
   of doing one thing, and doing that one thing well.
-
-* If the program is not free as in <a href=https://www.gnu.org/philosophy/free-sw.html target=blank_>free</a>, then I
-  assume the program is bloated and may be malware.
-
+<br><br>
+* If the program is not free as in <a
+  href=https://www.gnu.org/philosophy/free-sw.html target=blank_>free</a>, then
+  I assume the program is bloated and may be malware.
+<br><br>
 * Politics.
-
+<br><br>
 * Google.
-
+<br><br>
 * Facebook.
 </div>
 
 <div class=box><div class=boxheader>Contact Details</div>
+<br>
 * Fediverse: @x@social.skiqqy.xyz
-
+<br><br>
 * Twitter: @posix_patrol
-
+<br><br>
 * Instagram: @_skiqqy
-
+<br><br>
 * Email: ohmyskippy@disroot.org
-
+<br><br>
 * xmpp: ohmyskippy@disroot.org
-
+<br><br>
 * Discord: Skiqqy#1159
 </div>
 
 <div class=box><div class=boxheader>Other</div>
+<br>
 * IRC: irc.skiqqy.xyz:6667
 </div>
