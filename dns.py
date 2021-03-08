@@ -42,6 +42,7 @@ domains = {
                 {"name": "social", "type": "A"},
                 {"name": "music", "type": "A"},
                 {"name": "dev", "type": "A"},
+                {"name": "games", "type": "A"},
             ]
         }
 
