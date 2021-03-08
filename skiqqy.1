@@ -11,50 +11,88 @@ Twitter: @posix_patrol
 Mastadon: @skippy@fosstodon.org
 .SH NOTE
 .PP
-This document should be viewed by running
-.B man\ <(curl\ -s\ \%https://skiqqy.xyz/skiqqy.1)
+This document should be viewed by running:
+.PP
+.B $ man\ <(curl\ -s\ \%https://skiqqy.xyz/skiqqy.1)
 .SH DESCRIPTION
 .PP
-I am currently studying Computer Science at Stellenbosch University, and am
-currently in my third year.
+I have a massive love for Software Development (specifically lower level
+systems) and the GNU/Linux ecosystem. I am an advocate of the FOSS movement,
+and believe in it's ideals.
 .PP
-I have a massive love for Software Development (specifically lower level systems)
-and the GNU/Linux ecosystem. I am an advocate of the FOSS movement, and believe
-in it's ideals.
+I am currently doing my Honours in Computer Science at Stellenbosch University,
+and am currently in my 4th year, and have a BSc in Mathematical Sciences
+(Computer Science) obtained at Stellenbosch University.
+.SH SKILLS
 .PP
-Primary skills include programming in C (langauge of choice), bash (scripting),
-python, java. I am proficient in backend web development (either in C, java or
-python) as well as working with databases.
+I am proficient in backend web development (either in C, java or python) as
+well as working with databases. I also have sys-admin experience and work with
+docker regularly, as everything on
+.I skiqqy.xyz
+is hosted locally on my own machines inside containers (some containers made by
+me) and managed by myself.
+.SS Skill Matrix
+.TS
+tab(;) allbox;
+l l l.
+ Language;Experience;Level [1-10]
+ C;3 Years;8
+ Java;4 Years;7
+ Python;2 Years;7
+ Bash;4 Years;9
+ POSIX sh;4 Years;9
+ Scala;1 Year;4
+ C++;1 Year;5
+.TE
+.TS
+tab(;) allbox;
+l l l.
+ Technology;Experience;Level [1-10]
+ Git;4+ Years;10
+ Docker;2 Years;7
+ GNU Core Utils (grep, sed, etc);4+ Years;8
+ Vim;4+ Years;7
+ tmux;3 Years;7
+ ssh;4 Years;7
+.TE
+.TS
+tab(;) allbox;
+l l l.
+ Operating Systems;Experience;Level [1-10]
+ Any GNU/Linux OS;6+ Years;10
+ MacOS;2 Years;7
+ Windows;4+ Years;6
+.TE
 .SH WORK EXPERIENCE
 .SS At/for Stellenbosch University
 .PP
-I have tutored and or "demi'd" multiple courses for SU, those including,
+I have tutored and or demi'd multiple courses for SU, those including,
 .IP
 \(bu First Year Mathematics
 .IP
 \(bu Second Year Computer Science
 .SH SELECTED ARTIFACTS
 .PP
-These projects are hosted on a private repository, since many of these
-projects are re-used by SU, and hence must be hosted privetly to prevent students
-from plagiarising.
+These projects are hosted on a private repository, since many of these projects
+are re-used by SU, and hence must be hosted privately to prevent students from
+plagiarising.
 .PP
-If you are interested in viewing these, please send me an email, and I can provide
-you with a .tar of the project.
+If you are interested in viewing these, please send me an email, and I can
+provide you with a .tar of the project.
 .SS ALAN Compiler
 .PP
-ALAN is a pascal like langauge, and my second year Computer Science project
-was to write a compiler for the ALAN language, for more information feel free to
+ALAN is a pascal like langauge, and my second year Computer Science project was
+to write a compiler for the ALAN language, for more information feel free to
 read the spec. The compiler is written in C.
 .SS Othello Bot
 This project was to create a bot to play the game Othello, the bot makes use of
-a negamax trea search with alpha beta pruning to find optimal moves. Written in C,
-using MPI API.
+a negamax trea search with alpha beta pruning to find optimal moves. Written in
+C, using MPI API.
 .SS OnPoint
 .PP
 OnPoint is a food review website, that allows users to view reviews on certain
-websites, as well as create an account, and follow friends, and see thier favorite
-restuarants.
+websites, as well as create an account, and follow friends, and see thier
+favorite restuarants.
 .PP
 OnPoint is written using a python backend (running on flask), neo4j DB, redis
 and Vue.js
@@ -64,10 +102,20 @@ Huffman Encoder
 A compression tool using the Huffman algorithm, written in x86_64 assembly.
 .SH PRIVATE PROJECTS
 .SS
+ctagd
+.PP
+ctagd is a tagged based message passing over sockets library. The main goal of
+ctagd is to make working with sockets in C as simple as possible. It achieves
+this by making the process of setting up sockets trivial, as well as
+constructing and passing messages easy.
+.PP
+ctagd is hosted at
+.I https://github.com/skiqqy/ctagd
+.SS
 cmesg
 .PP
-A messaging application using a server written in C, and a client written in java,
-there are plans to extend cmesg to also support VoIP.
+A messaging application using a server written in C, and a client written in
+java, there are plans to extend cmesg to also support VoIP.
 .PP
 cmesg is hosted at
 .I https://github.com/skiqqy/cmesg
@@ -79,6 +127,11 @@ files etc.
 .PP
 C45DiscordBot is hosted at
 .I https://github.com/skiqqy/C45DiscordBot
+.SS
+Other
+.PP
+For a full list of my projects, one can find a list at
+.I https://skiqqy.xyz/site/projects.html
 .SH
 BUGS
 .PP
