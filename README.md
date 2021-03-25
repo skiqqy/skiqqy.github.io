@@ -16,6 +16,31 @@ $ make demo # Builds everything with injected warning text.
 $ make build
 ````
 
+### Web Pages
+In the current iteration, to add a new page to the website create a `raw/<file>.txt`, this will generate an html file placed in `site/<file>.html`. For examples look inside `raw/`.
+This file uses a custom markup called skup (skiqqy markup) that has the following features.
+
+#### Blocks
+Wrap text/skup/html in a block, please note the `.` that terminates the title as well as the `EBLOCK` that terminates the block.
+```
+SBLOCK <Title>.
+<text/skup/html>
+EBLOCK
+```
+This will generate html that looks something like the following.
+```
++------------------------------------+
+|                                    |
+|              <Title>               |
+|                                    |
+|         <text/skup/html>           |
+|                                    |
++------------------------------------+
+```
+
+#### Newlines
+To force a newline simply use `\\` (just like LaTeX).
+
 ### Static Blog
 The goal of this website is to serve 'static' content that gets updated
 through scripts, this is to reduce bloat, and to ensure a fast website.
