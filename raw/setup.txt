@@ -1,46 +1,43 @@
-<div class=box><div class=boxheader>Operating System & Desktop Environment</div>
-<br>
+SBLOCK Operating System & Desktop Environment.
 * Currently I am running <a href=https://getfedora.org>Fedora GNU/Linux</a>
-<br><br>
+\\\\
 * As for desktop environment, A only use dwm, it fits my workflow perfectly,
   and I have spent the last few years perfecting it, I dont need a mouse, all I
   need is a keyboard, and I am comfortable.
-</div>
+EBLOCK
 
-<div class=box><div class=boxheader>Workflow</div>
-<br>
+SBLOCK Workflow.
 * My workflow is simple: <a href=https://dwm.suckless.org/>dwm</a> + <a
   href=https://st.suckless.org/>terminal</a> + <a
   href=https://github.com/tmux/tmux/wiki>tmux</a> + <a
   href=https://www.vim.org/>vim</a>, once I have these, I am in my happy place,
   and produce really nice code.
-<br><br>
+\\\\
 * I have recently switched to <a href=https://dwm.suckless.org/>dwm</a> by <a
   href=https://suckless.org/>suckless</a>, the main reason for the switch was
   that my previous wm (<a href=https://i3wm.org>i3wm</a>) was very limiting,
   with dwm I can edit the source code directly, and so customize it to exactly
   what I want. Also, elitist.
-<br><br>
+\\\\
 * I have written a script that sets up my workspace, and install's
   dependencies, this script can be downloaded <a
   href=https://skiqqy.xyz/install.sh>here</a>.
-<br><br>
+\\\\
 * You can also get my configs on thier own:
-    <br>- ^/skiqqy/.dotfiles
-    <br>- ^/skiqqy/.tmux
-    <br>- ^/skiqqy/dwm
-    <br>- ^/skiqqy/st
-</div>
+    \\- ^/skiqqy/.dotfiles
+    \\- ^/skiqqy/.tmux
+    \\- ^/skiqqy/dwm
+    \\- ^/skiqqy/st
+EBLOCK
 
-<div class=box><div class=boxheader>Pictures</div>
-<br>
+SBLOCK Pictures.
 * Image 1: An example of a normal working session
   using tmux, with vim open.
-<br><br>
+\\\\
 * Image 2: An example of programs being tiled.
-<br><br>
+\\\\
 * Image 3: An example of an empty workspace.
-</div>
+EBLOCK
 
 <a href=../assets/media/dwm2.png>Image 1:</a>
 <img src="../assets/media/dwm2.png">
