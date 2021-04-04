@@ -1,4 +1,4 @@
-SBLOCK Private.
+SBLOCK. Private
 * pizza, found here ^/skiqqy/pizza
 \\\\
 * cmesg, found here ^/skiqqy/cmesg
@@ -10,24 +10,24 @@ SBLOCK Private.
 * This website, found here ^/skiqqy/skiqqy.github.io
 \\\\
 * DChess, found here ^/skiqqy/DChess
-EBLOCK
+EBLOCK.
 
-SBLOCK Community Projects (more than 2-3 devs).
+SBLOCK. Community Projects (more than 2-3 devs)
 * CRXN, more details can be found <a
   href=https://deavmi.github.io/projects/crxn target=blank_>here</a>.
 \\\\
 * BNet, an IRC network, more info can be found <a
   href=https://deavmi.github.io/projects/bonobonet target=blank_>here</a>.
-EBLOCK
+EBLOCK.
 
-SBLOCK "Dead" Projects.
+SBLOCK. "Dead" Projects
 These are projects that develeopment has stopped on, Hopefully they will be
 revived.
 \\\\
 * KCC: Kak C Compiler, found here ^/skiqqy/kcc
-EBLOCK
+EBLOCK.
 
-SBLOCK University Projects.
+SBLOCK. University Projects
 Due to the fact that many of these projects are still being used to asses
 students at SU, these repos must be set to private, in order to prevent
 students from
@@ -109,4 +109,4 @@ copying my work
   found below:
   \\- <a href=/assets/CS354/project5/report.pdf>Project Report</a>.
   \\- <a href=/assets/CS354/project5/spec.pdf>Project Specification</a>.
-EBLOCK
+EBLOCK.

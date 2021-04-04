@@ -23,9 +23,9 @@ This file uses a custom markup called skup (skiqqy markup) that has the followin
 #### Blocks
 Wrap text/skup/html in a block, please note the `.` that terminates the title as well as the `EBLOCK` that terminates the block.
 ```
-SBLOCK <Title>.
+SBLOCK. <Title>
 <text/skup/html>
-EBLOCK
+EBLOCK.
 ```
 This will generate html that looks something like the following.
 ```
@@ -40,6 +40,14 @@ This will generate html that looks something like the following.
 
 #### Newlines
 To force a newline simply use `\\` (just like LaTeX).
+
+### Links
+To add a link use
+```
+a/name.domain/<your link name>/
+```
+This will create a hyperlink with the text `<your link name` pointing to
+`name.domain`
 
 ### Static Blog
 The goal of this website is to serve 'static' content that gets updated

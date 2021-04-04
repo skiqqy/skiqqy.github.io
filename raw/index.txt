@@ -1,4 +1,4 @@
-SBLOCK About Me.
+SBLOCK. About Me
 * My name is Stephen Cochrane, but my friends call
   me Skippy (Written skiqqy).
 \\\\
@@ -22,9 +22,9 @@ SBLOCK About Me.
 * Just read the man-pages bro.
 \\\\
 * Come water my flowers in animal crossing pls.
-EBLOCK
+EBLOCK.
 
-SBLOCK About this website.
+SBLOCK. About this website
 This website serves as my little footprint on the
 amazing creation that is the internet.
 \\\\
@@ -45,9 +45,9 @@ pushed.
 If you are interested in more more in depth explanation of the setup, you can
 read this <a href=https://blog.skiqqy.xyz/new-vs-old/ target=blank_>post</a>,
 as well as <a href=https://blog.skiqqy.xyz/nginxd/ target=blank_>this one</a>.
-EBLOCK
+EBLOCK.
 
-SBLOCK Webring.
+SBLOCK. Webring
 * Please go take a look at my friend Tristan, aka
   "The king of subnets"/"alloca go brrr", his
   website located here !/deavmi.assigned.network
@@ -57,9 +57,9 @@ SBLOCK Webring.
 \\\\
 * nova "something something weeb" __surname__
   \\  - */novaburst.tilde.team
-EBLOCK
+EBLOCK.
 
-SBLOCK What I consider bloat.
+SBLOCK. What I consider bloat
 * Any program that is not "minimal", in the sense
   that it does not conform to the unix philosophy
   of doing one thing, and doing that one thing well.
@@ -73,9 +73,9 @@ SBLOCK What I consider bloat.
 * Google.
 \\\\
 * Facebook.
-EBLOCK
+EBLOCK.
 
-SBLOCK Contact Details.
+SBLOCK. Contact Details
 * Fediverse: @x@social.skiqqy.xyz
 \\\\
 * Twitter: @posix_patrol
@@ -87,8 +87,8 @@ SBLOCK Contact Details.
 * xmpp: ohmyskippy@disroot.org
 \\\\
 * Discord: Skiqqy#1159
-EBLOCK
+EBLOCK.
 
-SBLOCK Other.
+SBLOCK. Other
 * IRC: irc.skiqqy.xyz:6667
-EBLOCK
+EBLOCK.

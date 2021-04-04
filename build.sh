@@ -15,8 +15,8 @@ conv () {
 	sed -E "s|(\\*/)([^ \)]*)|*\/<a href=https:\/\/\2/>\2</a>|g" |
 	sed -E "s|(\\!/)([^ \)]*)|!\/<a href=http:\/\/\2/>\2</a>|g" |
 	sed -E 's|a/(.+)/(.+)/|<a href="\1">\2</a>|g' |
-	sed -E 's|^SBLOCK (.+)\.|<div class=box><div class=boxheader>\1</div><br>|g' |
-	sed -E 's|^EBLOCK|</div>|g' |
+	sed -E 's|^SBLOCK\. (.+)|<div class=box><div class=boxheader>\1</div><br>|g' |
+	sed -E 's|^EBLOCK\.|</div>|g' |
 	sed -E 's|\\\\|<br>|g' |
 
 	sed -E '/%%BODY%%/r /dev/stdin' raw/template.html |

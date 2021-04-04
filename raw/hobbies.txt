@@ -1,7 +1,7 @@
-SBLOCK My Hobbies.
+SBLOCK. My Hobbies
 This page contains several links to my non CS hobbies that I participate in.
-EBLOCK
+EBLOCK.
 
-SBLOCK Gaming.
+SBLOCK. Gaming
 * My World of Warcraft homepage: <a href="/site/wow.html">here</a>.
-EBLOCK
+EBLOCK.
