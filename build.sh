@@ -9,9 +9,12 @@ conv () {
 	# ^/name -> https://github.com/name
 	# */name.domain -> https://name.domain
 	# !/name.domain -> http://name.domain
+	# a/name.domain/title/ -> <a href="name.domain">title</a>
+
 	sed -E "s|(\\^/)([^ \)]*)|^\/<a href=$HOST/\2>\2</a>|g" |
 	sed -E "s|(\\*/)([^ \)]*)|*\/<a href=https:\/\/\2/>\2</a>|g" |
 	sed -E "s|(\\!/)([^ \)]*)|!\/<a href=http:\/\/\2/>\2</a>|g" |
+	sed -E 's|a/(.+)/(.+)/|<a href="\1">\2</a>|g' |
 	sed -E 's|^SBLOCK (.+)\.|<div class=box><div class=boxheader>\1</div><br>|g' |
 	sed -E 's|^EBLOCK|</div>|g' |
 	sed -E 's|\\\\|<br>|g' |
