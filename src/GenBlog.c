@@ -28,7 +28,7 @@ int main() {
 		while ((ent = readdir(dir)) != NULL) {
 			if (strcmp(ent->d_name, ".") && strcmp(ent->d_name, "..")) {
 				sprintf(htmlName, "./blogs/");
-				sprintf(link, "");
+				link[0] = 0;
 
 				c = ent->d_name;
 				i = 0;
@@ -62,7 +62,6 @@ int main() {
 }
 
 void genBP(char *file) {
-	char buff[256];
 	curr = fopen(file, "r");
 
 	// just for debug
@@ -102,7 +101,7 @@ void echoFile(FILE *fp) {
 			strcat(line, cat);
 		} else {
 			printf("%s\n", line);
-			sprintf(line, "");
+			line[0] = 0;
 		}
 		ch = getc(fp);
 	}

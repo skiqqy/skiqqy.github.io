@@ -76,19 +76,17 @@ SBLOCK. What I consider bloat
 EBLOCK.
 
 SBLOCK. Contact Details
-* Fediverse: @x@social.skiqqy.xyz
+* Email: a/mailto:skiqqy@redxen.eu/skiqqy@redxen.eu/ (preferred)
 \\\\
-* Twitter: @posix_patrol
+* Fediverse: a/https://social.skiqqy.xyz/x/x@social.skiqqy.xyz/
 \\\\
-* Instagram: @_skiqqy
+* Twitter: a/https://twitter.com/posix_patrol/@posix_patrol/
 \\\\
-* Email: ohmyskippy@disroot.org
+* Instagram: a/https://www.instagram.com/_skiqqy/@_skiqqy/
 \\\\
 * xmpp: ohmyskippy@disroot.org
 \\\\
 * Discord: Skiqqy#1159
-EBLOCK.
-
-SBLOCK. Other
-* IRC: irc.skiqqy.xyz:6667
+\\\\
+* IRC: skiqqy
 EBLOCK.

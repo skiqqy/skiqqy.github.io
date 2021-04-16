@@ -4,9 +4,9 @@ CC=gcc
 FLAGS=-Wall -pedantic
 EXE=bin/GenBlog
 
-all: comp blog build
+all: build
 
-demo: comp blog buildd
+demo: buildd
 
 comp: install
 	$(CC) $(FLAGS) src/GenBlog.c -o $(EXE)
