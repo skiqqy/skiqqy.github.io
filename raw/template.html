@@ -22,6 +22,11 @@
 		width:100%
 	}
 
+	.gif {
+		height:31px;
+		width:88px;
+	}
+
 	.c{
 		display:table-cell;
 		max-width:999px;
@@ -33,6 +38,17 @@
 	}
 
 	@media(max-width:999px){
+		.box {
+			width: 90%;
+			border: 2.5px dashed white;
+			position:center;
+			text: auto;
+			font-size: 30px;
+			text-align: left;
+			padding: 25px;
+			margin: 12px;
+		}
+
 		.c{
 			display:block;
 			font-size:1.94vw
@@ -40,9 +56,9 @@
 	}
 
 	.header {
-		padding: 60px;
+		padding: 20px;
 		text-align: center;
-		font-size: 30px;
+		font-size: 20px;
 	}
 
 	.subheader {
@@ -56,7 +72,7 @@
 		border: 2.5px dashed white;
 		position:center;
 		text: auto;
-		font-size: 15px;
+		font-size: 18px;
 		text-align: left;
 		padding: 25px;
 		margin: 12px;
@@ -72,11 +88,10 @@
 		color: orange
 	}
 </style>
+<div style="text-align:center;display:table;margin:16px auto">
+<div class=c><pre style="top:0;position:sticky">
 <div class="header">%%HEADER%%</div>
 <center><pre>%%QUOTE%%</pre></center>
-<div style="text-align:left;display:table;margin:16px auto">
-<div class=c><pre style="top:0;position:sticky;user-select:none">
-
 Portals:
 <a href=/>Home</a>
 <a href=https://dev.skiqqy.xyz>Developer Instance</a> 
@@ -102,6 +117,12 @@ Hosted Services:
 </div>
 <br>
 <div class=c>
+%%DEV%%
 %%BODY%%
-<a href="https://github.com/skiqqy/skiqqy.github.io/">Page Source</a>
+<a href="https://github.com/skiqqy/skiqqy.github.io">Page Source</a>
+<center>
+<p>
+<a href="https://redxen.eu"><img class=gif src="/assets/redxen.gif" alt=""></a>
+</p>
+</center>
 </div></div>

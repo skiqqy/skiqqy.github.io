@@ -2,9 +2,9 @@
 # Auther: Skiqqy
 
 HOST="https://github.com/"
-quote=false # True injects a qoute in hex
+quote=true # True injects a qoute in hex
 
-# Find a qoute and transform to hex, replaceing newlines with \n
+# Find a (WIP) qoute and transform to hex, replaceing newlines with \n
 quote ()
 {
 	if "$quote"
@@ -34,15 +34,19 @@ conv () {
 	sed -E '/%%BODY%%/r /dev/stdin' raw/template.html |
 	sed -E '/%%BODY%%/d' |
 	sed -E "s|%%QUOTE%%|$(quote)|g" |
+	sed -E "s|%%DEV%%|$dev|g" |
 	sed 's/%%HEADER%%/'"$header"'/g'
 }
 
 main () {
-	while getopts "d" opt
+	while getopts "dq" opt
 	do
 		case $opt in
 			d)
-				dev="<h4 class=dev>Please note, this is the development page, things may be broken\.<\/h4><h4 class=dev>Last built on $(date)\.<\/h4><details><summary>Details<\/summary>This version of my website is hosted inside a <a href=https:\/\/github.com\/skiqqy\/skiqqy-docker>docker container<\/a> and pulls from origin\/dev every 10 seconds, hence it is possible for the site to be unstable, this is only for demo purposes\.<\/details>"
+				dev="<h4 class=dev>Please note, this is the development page, things may be broken\.<\/h4><h4 class=dev>Last built on $(date)\.<\/h4><details><summary>Details<\/summary>This version of my website is hosted inside a <a href=https:\/\/github.com\/skiqqy\/skiqqy-docker>docker container<\/a> and pulls from origin\/dev every 1 minute, hence it is possible for the site to be unstable, this is only for demo purposes\.<\/details>"
+				;;
+			q)
+				quote=false
 				;;
 			*)
 				exit 2
@@ -64,7 +68,7 @@ main () {
 				path=${path/txt/html}
 				;;
 		esac
-		[[ -n $dev ]] && header="$header$dev"
+		#[[ -n $dev ]] && header="$header$dev"
 
 		echo "Building $file"
 		conv < "$file" > "$path"
