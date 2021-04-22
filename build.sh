@@ -12,7 +12,6 @@ quote ()
 		res=$(printf 'C is quirky, flawed, and an enormous success.\n Dennis M. Ritchie' |
 			hexdump -e '8/1 " %02X" "\n"')
 		printf '%s' "${res//$'\n'/\\n}"
-		return
 	fi
 }
 
