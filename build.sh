@@ -2,6 +2,19 @@
 # Auther: Skiqqy
 
 HOST="https://github.com/"
+quote=false # True injects a qoute in hex
+
+# Find a qoute and transform to hex, replaceing newlines with \n
+quote ()
+{
+	if "$quote"
+	then
+		res=$(printf 'C is quirky, flawed, and an enormous success.\n Dennis M. Ritchie' |
+			hexdump -e '8/1 " %02X" "\n"')
+		printf '%s' "${res//$'\n'/\\n}"
+		return
+	fi
+}
 
 conv () {
 	# Take a file and convert it to html by making substitutes.
@@ -21,6 +34,7 @@ conv () {
 
 	sed -E '/%%BODY%%/r /dev/stdin' raw/template.html |
 	sed -E '/%%BODY%%/d' |
+	sed -E "s|%%QUOTE%%|$(quote)|g" |
 	sed 's/%%HEADER%%/'"$header"'/g'
 }
 
@@ -46,7 +60,7 @@ main () {
 				header="<h1>Skiqqy<\/h1>~ Pronounced skippy"
 				;;
 			*)
-				header="<h1>$(echo $file | cut -d "/" -f 2 | cut -d "." -f 1)<\/h1>"
+				header="<h1>$(echo "$file" | cut -d "/" -f 2 | cut -d "." -f 1)<\/h1>"
 				path=${file/raw/site}
 				path=${path/txt/html}
 				;;
@@ -54,7 +68,7 @@ main () {
 		[[ -n $dev ]] && header="$header$dev"
 
 		echo "Building $file"
-		conv < "$file" > $path
+		conv < "$file" > "$path"
 	done
 }
 
