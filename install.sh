@@ -1,10 +1,13 @@
+#!/bin/bash
+# My env install script ~ Skiqqy.
+
 declare -A osInfo;
 osInfo[/etc/redhat-release]=dnf
 osInfo[/etc/arch-release]=pacman
 osInfo[/etc/debian_version]=apt-get
 osInfo[/etc/alpine-release]=apk
 
-for f in ${!osInfo[@]}
+for f in "${!osInfo[@]}"
 do
 	if [[ -f $f ]];then
 		echo Package manager: ${osInfo[$f]}
@@ -29,21 +32,22 @@ do
 	fi
 done
 
-# Clone repos
-mkdir $HOME/repos
-cd $HOME/repos
-git clone https://github.com/skiqqy/.dotfiles/
-git clone https://github.com/skiqqy/.tmux
-mkdir $HOME/Builds
-cd $HOME/Builds
+(
+	# Clone repos
+	dir="$HOME/repos"
+	mkdir "$dir"
+	git clone https://git.sr.ht/~skiqqy/.dotfiles "$dir/.dotfiles"
+	git clone https://git.sr.ht/~skiqqy/.tmux     "$dir/.tmux"
 
-# Begin Builing
-git clone https://github.com/skiqqy/dwm
-git clone https://github.com/skiqqy/st
-make -C dwm/
-sudo make -C st/
+	dir="$HOME/Builds"
+	mkdir "$dir"
+	git clone https://git.sr.ht/~skiqqy/dwm "$dir/dwm"
+	git clone https://git.sr.ht/~skiqqy/st  "$dir/st"
 
-make -C $HOME/repos/.dotfiles
-cd $HOME/repos/.tmux
-./install.sh
-cd
+	# Begin Builing
+	make -C dwm/
+	sudo make -C st/
+	make -C "$HOME"/repos/.dotfiles
+	cd "$HOME"/repos/.tmux || exit
+	./install.sh
+)
