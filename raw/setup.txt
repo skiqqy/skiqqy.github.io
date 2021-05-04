@@ -13,21 +13,32 @@ SBLOCK. Workflow
   href=https://www.vim.org/>vim</a>, once I have these, I am in my happy place,
   and produce really nice code.
 \\\\
-* I have recently switched to <a href=https://dwm.suckless.org/>dwm</a> by <a
-  href=https://suckless.org/>suckless</a>, the main reason for the switch was
-  that my previous wm (<a href=https://i3wm.org>i3wm</a>) was very limiting,
-  with dwm I can edit the source code directly, and so customize it to exactly
-  what I want. Also, elitist.
+* Typically when starting a new project I use
+  a/https://git.sr.ht/~skiqqy/skelly/skelly/ to init the boiler plate stuff
+  (i.e. directory structures, git, Makefiles, README's etc). Once that is
+  complete then I create (or attach to) a tmux session using
+  a/https://git.sr.ht/~skiqqy/bin/tree/master/item/ws/ws/, and then begin
+  coding away.
+  \\
+  For version control I use a/https://git-scm.com/git/, and hosting my
+  repositories remotely I use a/https://sourcehut.org/SourceHut/.
 \\\\
-* I have written a script that sets up my workspace, and install's
+* I have recently switched to <a href=https://dwm.suckless.org/>dwm</a> by <a
+  href=https://suckless.org/>suckless</a>, the main reason for the switch from
+  my previous wm (<a href=https://i3wm.org>i3wm</a>) is that I highly prefer
+  the approach of forking and patching software to your desired format than
+  editing a config that must be loaded at run time, that is I prefer having has
+  much known at compile time as possible. Also, elitist.
+\\\\
+* I have written a script that sets up my workspace, and installs
   dependencies, this script can be downloaded <a
   href=https://skiqqy.xyz/install.sh>here</a>.
 \\\\
 * You can also get my configs on thier own:
-    \\- ^/skiqqy/.dotfiles
-    \\- ^/skiqqy/.tmux
-    \\- ^/skiqqy/dwm
-    \\- ^/skiqqy/st
+    \\- a/https://git.sr.ht/~skiqqy/.dotfiles/.dotfiles/
+    \\- a/https://git.sr.ht/~skiqqy/.tmux/.tmux/
+    \\- a/https://git.sr.ht/~skiqqy/dwm/dwm/
+    \\- a/https://git.sr.ht/~skiqqy/st/st/
 EBLOCK.
 
 SBLOCK. Pictures
