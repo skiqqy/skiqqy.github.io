@@ -18,7 +18,9 @@ SBLOCK. Workflow
   (i.e. directory structures, git, Makefiles, README's etc). Once that is
   complete then I create (or attach to) a tmux session using
   a/https://git.sr.ht/~skiqqy/bin/tree/master/item/ws/ws/, and then begin
-  coding away.
+  coding away. If programming in C I use
+  a/https://git.sr.ht/~skiqqy/bin/tree/master/item/tagd/tagd/ to keep my ctags
+  files up to date.
   \\
   For version control I use a/https://git-scm.com/git/, and hosting my
   repositories remotely I use a/https://sourcehut.org/SourceHut/.
