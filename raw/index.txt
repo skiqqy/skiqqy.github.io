@@ -17,6 +17,9 @@ SBLOCK. About Me
 * I love (LOVE!) mathematics, more specifically,
   abstract algebra (rings, fields and groups).
 \\\\
+* I enjoy shell scripting and is my prefered method of automating tasks,
+  information on my scripts can be found a//site/scripts.html/here/.
+\\\\
 * Vim or gtfo.
 \\\\
 * Just read the man-pages bro.
@@ -49,8 +52,8 @@ EBLOCK.
 
 SBLOCK. Webring
 * Please go take a look at my friend Tristan, aka
-  "The king of subnets"/"alloca go brrr", his
-  website located here !/deavmi.assigned.network
+  "The king of subnets"/"alloca go brrr".
+  \\  - _/deavmi.assigned.network
 \\\\
 * caskd "you are wrong"/"im german" denes
   \\  - */redxen.eu

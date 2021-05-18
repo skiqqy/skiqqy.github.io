@@ -1,0 +1,56 @@
+WIP.
+SBLOCK. #!/usr/bin/env sh
+This area of my website is dedicated to logging my helper scripts, as well as
+explaining thier use cases.
+
+\\\\
+
+Most of my scripts are kept inside my a/https://git.sr.ht/~skiqqy/bin/tree/bin/,
+which I usually clone inside $HOME, which is included in my $PATH. With that
+said, each title will link to said script.
+
+\\\\
+
+Other scripts fall outside of my bin include
+\\ - Project Specific run scripts (I wont detail each script, but will describe
+my general layout).
+\\ - Scripts that have thier own dedicated repos, these will be listed here.
+
+\\\\
+
+Lastly I am only going to list the non-trivial scripts, and not my simple
+a/https://git.sr.ht/~skiqqy/bin/tree/master/item/calc/wrapper/ scripts, as
+these are not exciting.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/pdf/pdf/
+TODO: Describe pdf.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/goto/goto/
+TODO: Describe goto.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/dcd/dcd/
+TODO: Describe dcd.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/tagd/tagd/
+TODO: Describe tagd.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/serverstat/serverstat/
+TODO: Describe serverstat.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/ws/ws/
+TODO: Describe ws.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/setwp/setwp/
+TODO: Describe setwp.
+EBLOCK.
+
+SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/walls/walls/
+TODO: Describe walls.
+EBLOCK.

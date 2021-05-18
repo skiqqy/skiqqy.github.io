@@ -20,16 +20,18 @@ conv () {
 
 	# ^/name -> https://github.com/name
 	# */name.domain -> https://name.domain
-	# !/name.domain -> http://name.domain
+	# _/name.domain -> http://name.domain
 	# a/name.domain/title/ -> <a href="name.domain">title</a>
 
 	sed -E "s|(\\^/)([^ \)]*)|^\/<a href=$HOST/\2>\2</a>|g" |
 	sed -E "s|(\\*/)([^ \)]*)|*\/<a href=https:\/\/\2/>\2</a>|g" |
-	sed -E "s|(\\!/)([^ \)]*)|!\/<a href=http:\/\/\2/>\2</a>|g" |
+	sed -E "s|(\\_/)([^ \)]*)|_\/<a href=http:\/\/\2/>\2</a>|g" |
 	sed -E 's|a/(.+)/(.+)/|<a href="\1">\2</a>|g' |
 	sed -E 's|^SBLOCK\. (.+)|<div class=box><div class=boxheader>\1</div><br>|g' |
 	sed -E 's|^EBLOCK\.|</div>|g' |
 	sed -E 's|\\\\|<br>|g' |
+	sed -E 's|WIP\.|<center><img style="width: 150px"src=../assets/con.gif><center>|g' |
+	sed -E 's|WIP\\\.|WIP.|g' |
 
 	sed -E '/%%BODY%%/r /dev/stdin' raw/template.html |
 	sed -E '/%%BODY%%/d' |
@@ -39,7 +41,7 @@ conv () {
 }
 
 main () {
-	while getopts "dq" opt
+	while getopts "dqw" opt
 	do
 		case $opt in
 			d)
