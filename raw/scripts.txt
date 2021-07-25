@@ -24,7 +24,10 @@ these are not exciting.
 EBLOCK.
 
 SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/pdf/pdf/
-TODO: Describe pdf.
+The goal of pdf is to make compiling and viewing pdf's as easy as possible.
+\\\\
+Currently pdf can compile man pages, markdown and LaTeX documents to pdf's, as
+well as view pdf's locally or from a URL.
 EBLOCK.
 
 SBLOCK. a/https://git.sr.ht/~skiqqy/bin/tree/master/item/goto/goto/
