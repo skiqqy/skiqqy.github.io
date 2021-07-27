@@ -3,18 +3,35 @@
 import requests
 import os
 import time
-
-f = open("secret/godaddy_key", "r")
+import sys, getopt
 
 secret = ""
 key = ""
-for line in f:
-    line = line.replace("\n","")
-    parse = line.split(":")
-    if parse[0] == "secret":
-        secret = parse[1]
-    elif parse[0] == "key":
-        key = parse[1]
+
+try:
+    opts, args = getopt.getopt(sys.argv[1:],"hk:s:",["key=","secret="])
+except getopt.GetoptError:
+    print('Usage: $ dns.py [-k <key> -s <secret>]')
+    sys.exit(1)
+
+for opt, arg in opts:
+    if opt == "-h":
+        print('Usage: $ dns.py [-k <key> -s <secret>]')
+        sys.exit(0)
+    elif opt in ("-k", "--key"):
+        key=arg
+    elif opt in ("-s", "--secret"):
+        secret=arg
+
+if secret == "" or key == "":
+    f = open("secret/godaddy_key", "r")
+    for line in f:
+        line = line.replace("\n","")
+        parse = line.split(":")
+        if parse[0] == "secret":
+            secret = parse[1]
+        elif parse[0] == "key":
+            key = parse[1]
 
 if secret == "" or key == "":
     print("No key or secret set")
