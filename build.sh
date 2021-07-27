@@ -5,7 +5,7 @@ HOST="https://github.com/"
 quote=true # True injects a qoute in hex
 
 # Find a (WIP) qoute and transform to hex, replaceing newlines with \n
-quote ()
+quote()
 {
 	if "$quote"
 	then
@@ -15,7 +15,7 @@ quote ()
 	fi
 }
 
-conv () {
+conv() {
 	# Take a file and convert it to html by making substitutes.
 
 	# ^/name -> https://github.com/name
@@ -40,8 +40,8 @@ conv () {
 	sed 's/%%HEADER%%/'"$header"'/g'
 }
 
-main () {
-	while getopts "dqw" opt
+main() {
+	while getopts "dqwp" opt
 	do
 		case $opt in
 			d)
@@ -49,6 +49,9 @@ main () {
 				;;
 			q)
 				quote=false
+				;;
+			p)
+				git pull # Pull before building, potentially highly scuffed lmao
 				;;
 			*)
 				exit 2
