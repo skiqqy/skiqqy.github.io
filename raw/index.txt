@@ -8,9 +8,6 @@ SBLOCK. About Me
   \\2. <code>$ curl https://skiqqy.xyz/gencv | bash</code>
   \\3. Or you can download it a/./assets/CurriculumVitae.pdf/here/.
 \\\\
-* I am currently studying my Honours in Computer Science at Stellenbosh
-  University, I am in my Fourth year.
-\\\\
 * I love low level coding, my language of choice
   is C.
 \\\\
